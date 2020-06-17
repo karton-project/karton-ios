@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D48EE309249ADB2200F1C598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EE308249ADB2200F1C598 /* AppDelegate.swift */; };
+		D48EE30B249ADB2200F1C598 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EE30A249ADB2200F1C598 /* SceneDelegate.swift */; };
+		D48EE30D249ADB2200F1C598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EE30C249ADB2200F1C598 /* ViewController.swift */; };
+		D48EE310249ADB2200F1C598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48EE30E249ADB2200F1C598 /* Main.storyboard */; };
+		D48EE312249ADB2400F1C598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48EE311249ADB2400F1C598 /* Assets.xcassets */; };
+		D48EE315249ADB2400F1C598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48EE313249ADB2400F1C598 /* LaunchScreen.storyboard */; };
+		D48EE320249ADB2400F1C598 /* karton_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EE31F249ADB2400F1C598 /* karton_iosTests.swift */; };
+		D48EE32B249ADB2400F1C598 /* karton_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EE32A249ADB2400F1C598 /* karton_iosUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D48EE31C249ADB2400F1C598 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D48EE2FD249ADB2200F1C598 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D48EE304249ADB2200F1C598;
+			remoteInfo = "karton-ios";
+		};
+		D48EE327249ADB2400F1C598 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D48EE2FD249ADB2200F1C598 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D48EE304249ADB2200F1C598;
+			remoteInfo = "karton-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D48EE305249ADB2200F1C598 /* karton-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "karton-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48EE308249ADB2200F1C598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D48EE30A249ADB2200F1C598 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D48EE30C249ADB2200F1C598 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D48EE30F249ADB2200F1C598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D48EE311249ADB2400F1C598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D48EE314249ADB2400F1C598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D48EE316249ADB2400F1C598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D48EE31B249ADB2400F1C598 /* karton-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "karton-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48EE31F249ADB2400F1C598 /* karton_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = karton_iosTests.swift; sourceTree = "<group>"; };
+		D48EE321249ADB2400F1C598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D48EE326249ADB2400F1C598 /* karton-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "karton-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48EE32A249ADB2400F1C598 /* karton_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = karton_iosUITests.swift; sourceTree = "<group>"; };
+		D48EE32C249ADB2400F1C598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D48EE302249ADB2200F1C598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48EE318249ADB2400F1C598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48EE323249ADB2400F1C598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D48EE2FC249ADB2200F1C598 = {
+			isa = PBXGroup;
+			children = (
+				D48EE307249ADB2200F1C598 /* karton-ios */,
+				D48EE31E249ADB2400F1C598 /* karton-iosTests */,
+				D48EE329249ADB2400F1C598 /* karton-iosUITests */,
+				D48EE306249ADB2200F1C598 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D48EE306249ADB2200F1C598 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D48EE305249ADB2200F1C598 /* karton-ios.app */,
+				D48EE31B249ADB2400F1C598 /* karton-iosTests.xctest */,
+				D48EE326249ADB2400F1C598 /* karton-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D48EE307249ADB2200F1C598 /* karton-ios */ = {
+			isa = PBXGroup;
+			children = (
+				D48EE308249ADB2200F1C598 /* AppDelegate.swift */,
+				D48EE30A249ADB2200F1C598 /* SceneDelegate.swift */,
+				D48EE30C249ADB2200F1C598 /* ViewController.swift */,
+				D48EE30E249ADB2200F1C598 /* Main.storyboard */,
+				D48EE311249ADB2400F1C598 /* Assets.xcassets */,
+				D48EE313249ADB2400F1C598 /* LaunchScreen.storyboard */,
+				D48EE316249ADB2400F1C598 /* Info.plist */,
+			);
+			path = "karton-ios";
+			sourceTree = "<group>";
+		};
+		D48EE31E249ADB2400F1C598 /* karton-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				D48EE31F249ADB2400F1C598 /* karton_iosTests.swift */,
+				D48EE321249ADB2400F1C598 /* Info.plist */,
+			);
+			path = "karton-iosTests";
+			sourceTree = "<group>";
+		};
+		D48EE329249ADB2400F1C598 /* karton-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D48EE32A249ADB2400F1C598 /* karton_iosUITests.swift */,
+				D48EE32C249ADB2400F1C598 /* Info.plist */,
+			);
+			path = "karton-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D48EE304249ADB2200F1C598 /* karton-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D48EE32F249ADB2400F1C598 /* Build configuration list for PBXNativeTarget "karton-ios" */;
+			buildPhases = (
+				D48EE301249ADB2200F1C598 /* Sources */,
+				D48EE302249ADB2200F1C598 /* Frameworks */,
+				D48EE303249ADB2200F1C598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "karton-ios";
+			productName = "karton-ios";
+			productReference = D48EE305249ADB2200F1C598 /* karton-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D48EE31A249ADB2400F1C598 /* karton-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D48EE332249ADB2400F1C598 /* Build configuration list for PBXNativeTarget "karton-iosTests" */;
+			buildPhases = (
+				D48EE317249ADB2400F1C598 /* Sources */,
+				D48EE318249ADB2400F1C598 /* Frameworks */,
+				D48EE319249ADB2400F1C598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D48EE31D249ADB2400F1C598 /* PBXTargetDependency */,
+			);
+			name = "karton-iosTests";
+			productName = "karton-iosTests";
+			productReference = D48EE31B249ADB2400F1C598 /* karton-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D48EE325249ADB2400F1C598 /* karton-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D48EE335249ADB2400F1C598 /* Build configuration list for PBXNativeTarget "karton-iosUITests" */;
+			buildPhases = (
+				D48EE322249ADB2400F1C598 /* Sources */,
+				D48EE323249ADB2400F1C598 /* Frameworks */,
+				D48EE324249ADB2400F1C598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D48EE328249ADB2400F1C598 /* PBXTargetDependency */,
+			);
+			name = "karton-iosUITests";
+			productName = "karton-iosUITests";
+			productReference = D48EE326249ADB2400F1C598 /* karton-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D48EE2FD249ADB2200F1C598 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Ece Azizoğlu";
+				TargetAttributes = {
+					D48EE304249ADB2200F1C598 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					D48EE31A249ADB2400F1C598 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = D48EE304249ADB2200F1C598;
+					};
+					D48EE325249ADB2400F1C598 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = D48EE304249ADB2200F1C598;
+					};
+				};
+			};
+			buildConfigurationList = D48EE300249ADB2200F1C598 /* Build configuration list for PBXProject "karton-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D48EE2FC249ADB2200F1C598;
+			productRefGroup = D48EE306249ADB2200F1C598 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D48EE304249ADB2200F1C598 /* karton-ios */,
+				D48EE31A249ADB2400F1C598 /* karton-iosTests */,
+				D48EE325249ADB2400F1C598 /* karton-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D48EE303249ADB2200F1C598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48EE315249ADB2400F1C598 /* LaunchScreen.storyboard in Resources */,
+				D48EE312249ADB2400F1C598 /* Assets.xcassets in Resources */,
+				D48EE310249ADB2200F1C598 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48EE319249ADB2400F1C598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48EE324249ADB2400F1C598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D48EE301249ADB2200F1C598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48EE30D249ADB2200F1C598 /* ViewController.swift in Sources */,
+				D48EE309249ADB2200F1C598 /* AppDelegate.swift in Sources */,
+				D48EE30B249ADB2200F1C598 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48EE317249ADB2400F1C598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48EE320249ADB2400F1C598 /* karton_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48EE322249ADB2400F1C598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48EE32B249ADB2400F1C598 /* karton_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D48EE31D249ADB2400F1C598 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D48EE304249ADB2200F1C598 /* karton-ios */;
+			targetProxy = D48EE31C249ADB2400F1C598 /* PBXContainerItemProxy */;
+		};
+		D48EE328249ADB2400F1C598 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D48EE304249ADB2200F1C598 /* karton-ios */;
+			targetProxy = D48EE327249ADB2400F1C598 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D48EE30E249ADB2200F1C598 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D48EE30F249ADB2200F1C598 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D48EE313249ADB2400F1C598 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D48EE314249ADB2400F1C598 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D48EE32D249ADB2400F1C598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D48EE32E249ADB2400F1C598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D48EE330249ADB2400F1C598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CPPZQGDYK7;
+				INFOPLIST_FILE = "karton-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ece.karton-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D48EE331249ADB2400F1C598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CPPZQGDYK7;
+				INFOPLIST_FILE = "karton-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ece.karton-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D48EE333249ADB2400F1C598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CPPZQGDYK7;
+				INFOPLIST_FILE = "karton-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ece.karton-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/karton-ios.app/karton-ios";
+			};
+			name = Debug;
+		};
+		D48EE334249ADB2400F1C598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CPPZQGDYK7;
+				INFOPLIST_FILE = "karton-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ece.karton-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/karton-ios.app/karton-ios";
+			};
+			name = Release;
+		};
+		D48EE336249ADB2400F1C598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CPPZQGDYK7;
+				INFOPLIST_FILE = "karton-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ece.karton-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "karton-ios";
+			};
+			name = Debug;
+		};
+		D48EE337249ADB2400F1C598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CPPZQGDYK7;
+				INFOPLIST_FILE = "karton-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ece.karton-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "karton-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D48EE300249ADB2200F1C598 /* Build configuration list for PBXProject "karton-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48EE32D249ADB2400F1C598 /* Debug */,
+				D48EE32E249ADB2400F1C598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D48EE32F249ADB2400F1C598 /* Build configuration list for PBXNativeTarget "karton-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48EE330249ADB2400F1C598 /* Debug */,
+				D48EE331249ADB2400F1C598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D48EE332249ADB2400F1C598 /* Build configuration list for PBXNativeTarget "karton-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48EE333249ADB2400F1C598 /* Debug */,
+				D48EE334249ADB2400F1C598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D48EE335249ADB2400F1C598 /* Build configuration list for PBXNativeTarget "karton-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48EE336249ADB2400F1C598 /* Debug */,
+				D48EE337249ADB2400F1C598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D48EE2FD249ADB2200F1C598 /* Project object */;
+}
