@@ -64,11 +64,14 @@ class HomePageViewController: UIViewController {
 
     @IBOutlet weak var problemCollectionView: UICollectionView!
     
+    @IBOutlet weak var noteButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        noteButton.layer.cornerRadius = noteButton.frame.height * 0.50
+        noteButton.layer.masksToBounds = true
+        
         // Do any additional setup after loading the view.
         title = "Problems"
         

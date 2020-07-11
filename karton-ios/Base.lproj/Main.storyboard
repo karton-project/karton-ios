@@ -117,12 +117,37 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="gwG-rw-cDw"/>
                                 </connections>
                             </collectionView>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Frh-zQ-gee">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Öğren" image="pencil.circle" catalog="system" selectedImage="pencil.circle.fill" id="4pF-4d-8nq"/>
+                                    <tabBarItem title="Kodla" image="rectangle.3.offgrid" catalog="system" selectedImage="rectangle.3.offgrid.fill" id="u31-E0-gij"/>
+                                    <tabBarItem title="Oyna" image="tortoise" catalog="system" selectedImage="tortoise.fill" id="02F-CT-AEQ"/>
+                                    <tabBarItem title="Ayarlar" image="person.circle" catalog="system" selectedImage="person.circle.fill" id="hEA-bD-5dC"/>
+                                </items>
+                            </tabBar>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DV-fP-4Qg" customClass="RoundButton" customModule="karton_ios" customModuleProvider="target">
+                                <rect key="frame" x="325" y="711" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="pencil" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="29"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="z5I-vQ-X1a"/>
                     <connections>
+                        <outlet property="noteButton" destination="3DV-fP-4Qg" id="AzB-e9-zes"/>
                         <outlet property="problemCollectionView" destination="y6Y-rq-eyV" id="wZ4-M2-5Cv"/>
                     </connections>
                 </viewController>
@@ -149,5 +174,14 @@
     </scenes>
     <resources>
         <image name="0" width="575" height="436"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="pencil.circle" catalog="system" width="128" height="121"/>
+        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="rectangle.3.offgrid" catalog="system" width="128" height="80"/>
+        <image name="rectangle.3.offgrid.fill" catalog="system" width="128" height="81"/>
+        <image name="tortoise" catalog="system" width="128" height="68"/>
+        <image name="tortoise.fill" catalog="system" width="128" height="66"/>
     </resources>
 </document>

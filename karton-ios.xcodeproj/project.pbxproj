@@ -18,6 +18,7 @@
 		D4F625F624B9AC1600EDB10B /* HomePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F625F524B9AC1600EDB10B /* HomePageCollectionViewCell.swift */; };
 		D4F625F924B9AF7300EDB10B /* ProblemsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F625F824B9AF7300EDB10B /* ProblemsDataSource.swift */; };
 		D4F625FB24B9AFB100EDB10B /* Problem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F625FA24B9AFB100EDB10B /* Problem.swift */; };
+		D4F625FF24BA331E00EDB10B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F625FE24BA331E00EDB10B /* RoundButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		D4F625F524B9AC1600EDB10B /* HomePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewCell.swift; sourceTree = "<group>"; };
 		D4F625F824B9AF7300EDB10B /* ProblemsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemsDataSource.swift; sourceTree = "<group>"; };
 		D4F625FA24B9AFB100EDB10B /* Problem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem.swift; sourceTree = "<group>"; };
+		D4F625FE24BA331E00EDB10B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		D48EE307249ADB2200F1C598 /* karton-ios */ = {
 			isa = PBXGroup;
 			children = (
+				D4F625FC24BA32ED00EDB10B /* Design */,
 				D4F625F224B9AB8400EDB10B /* Cells */,
 				D4F625F724B9AF1300EDB10B /* Models */,
 				D4F625EF24B9A43D00EDB10B /* ViewControllers */,
@@ -159,6 +162,14 @@
 				D4F625FA24B9AFB100EDB10B /* Problem.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D4F625FC24BA32ED00EDB10B /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				D4F625FE24BA331E00EDB10B /* RoundButton.swift */,
+			);
+			path = Design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +305,7 @@
 			files = (
 				D4F625F624B9AC1600EDB10B /* HomePageCollectionViewCell.swift in Sources */,
 				D4F625FB24B9AFB100EDB10B /* Problem.swift in Sources */,
+				D4F625FF24BA331E00EDB10B /* RoundButton.swift in Sources */,
 				D4F625F924B9AF7300EDB10B /* ProblemsDataSource.swift in Sources */,
 				D4F625F124B9A46900EDB10B /* HomePageViewController.swift in Sources */,
 				D48EE309249ADB2200F1C598 /* AppDelegate.swift in Sources */,
