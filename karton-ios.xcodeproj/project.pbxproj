@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		D48EE309249ADB2200F1C598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EE308249ADB2200F1C598 /* AppDelegate.swift */; };
 		D48EE30B249ADB2200F1C598 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EE30A249ADB2200F1C598 /* SceneDelegate.swift */; };
-		D48EE30D249ADB2200F1C598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EE30C249ADB2200F1C598 /* ViewController.swift */; };
 		D48EE310249ADB2200F1C598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48EE30E249ADB2200F1C598 /* Main.storyboard */; };
 		D48EE312249ADB2400F1C598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48EE311249ADB2400F1C598 /* Assets.xcassets */; };
 		D48EE315249ADB2400F1C598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48EE313249ADB2400F1C598 /* LaunchScreen.storyboard */; };
 		D48EE320249ADB2400F1C598 /* karton_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EE31F249ADB2400F1C598 /* karton_iosTests.swift */; };
 		D48EE32B249ADB2400F1C598 /* karton_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EE32A249ADB2400F1C598 /* karton_iosUITests.swift */; };
+		D4F625F124B9A46900EDB10B /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F625F024B9A46900EDB10B /* HomePageViewController.swift */; };
+		D4F625F624B9AC1600EDB10B /* HomePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F625F524B9AC1600EDB10B /* HomePageCollectionViewCell.swift */; };
+		D4F625F924B9AF7300EDB10B /* ProblemsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F625F824B9AF7300EDB10B /* ProblemsDataSource.swift */; };
+		D4F625FB24B9AFB100EDB10B /* Problem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F625FA24B9AFB100EDB10B /* Problem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 		D48EE305249ADB2200F1C598 /* karton-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "karton-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48EE308249ADB2200F1C598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D48EE30A249ADB2200F1C598 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D48EE30C249ADB2200F1C598 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D48EE30F249ADB2200F1C598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D48EE311249ADB2400F1C598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D48EE314249ADB2400F1C598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		D48EE326249ADB2400F1C598 /* karton-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "karton-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48EE32A249ADB2400F1C598 /* karton_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = karton_iosUITests.swift; sourceTree = "<group>"; };
 		D48EE32C249ADB2400F1C598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4F625F024B9A46900EDB10B /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		D4F625F524B9AC1600EDB10B /* HomePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewCell.swift; sourceTree = "<group>"; };
+		D4F625F824B9AF7300EDB10B /* ProblemsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemsDataSource.swift; sourceTree = "<group>"; };
+		D4F625FA24B9AFB100EDB10B /* Problem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,11 @@
 		D48EE307249ADB2200F1C598 /* karton-ios */ = {
 			isa = PBXGroup;
 			children = (
+				D4F625F224B9AB8400EDB10B /* Cells */,
+				D4F625F724B9AF1300EDB10B /* Models */,
+				D4F625EF24B9A43D00EDB10B /* ViewControllers */,
 				D48EE308249ADB2200F1C598 /* AppDelegate.swift */,
 				D48EE30A249ADB2200F1C598 /* SceneDelegate.swift */,
-				D48EE30C249ADB2200F1C598 /* ViewController.swift */,
 				D48EE30E249ADB2200F1C598 /* Main.storyboard */,
 				D48EE311249ADB2400F1C598 /* Assets.xcassets */,
 				D48EE313249ADB2400F1C598 /* LaunchScreen.storyboard */,
@@ -126,6 +134,31 @@
 				D48EE32C249ADB2400F1C598 /* Info.plist */,
 			);
 			path = "karton-iosUITests";
+			sourceTree = "<group>";
+		};
+		D4F625EF24B9A43D00EDB10B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D4F625F024B9A46900EDB10B /* HomePageViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D4F625F224B9AB8400EDB10B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D4F625F524B9AC1600EDB10B /* HomePageCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D4F625F724B9AF1300EDB10B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D4F625F824B9AF7300EDB10B /* ProblemsDataSource.swift */,
+				D4F625FA24B9AFB100EDB10B /* Problem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D48EE30D249ADB2200F1C598 /* ViewController.swift in Sources */,
+				D4F625F624B9AC1600EDB10B /* HomePageCollectionViewCell.swift in Sources */,
+				D4F625FB24B9AFB100EDB10B /* Problem.swift in Sources */,
+				D4F625F924B9AF7300EDB10B /* ProblemsDataSource.swift in Sources */,
+				D4F625F124B9A46900EDB10B /* HomePageViewController.swift in Sources */,
 				D48EE309249ADB2200F1C598 /* AppDelegate.swift in Sources */,
 				D48EE30B249ADB2200F1C598 /* SceneDelegate.swift in Sources */,
 			);
