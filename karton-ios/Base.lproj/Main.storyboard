@@ -46,11 +46,29 @@
                                                     <color key="textColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQ9-rt-xx2">
+                                                    <rect key="frame" x="18" y="206" width="130" height="48"/>
+                                                    <color key="backgroundColor" red="0.28716238230000002" green="0.36521298749999997" blue="0.67266076799999996" alpha="0.93019584764109597" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="eQ9-rt-xx2" secondAttribute="height" multiplier="4:3" constant="66" id="kll-Xc-8rm"/>
+                                                        <constraint firstAttribute="width" constant="130" id="oLf-N0-AfW"/>
+                                                    </constraints>
+                                                    <state key="normal" title="ÖĞREN">
+                                                        <color key="titleColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                </button>
+                                                <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMh-SY-nEJ">
+                                                    <rect key="frame" x="204" y="206" width="130" height="48"/>
+                                                    <color key="backgroundColor" red="0.28716238232061336" green="0.36521298750869535" blue="0.67266076799999996" alpha="0.93000000000000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="DENE">
+                                                        <color key="titleColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xa4-Xc-eIQ">
-                                                    <rect key="frame" x="18" y="87" width="86" height="98.5"/>
+                                                    <rect key="frame" x="18" y="74" width="86" height="98.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="1Tl-LC-jnE"/>
-                                                        <constraint firstAttribute="height" constant="86" id="5wS-uP-Dvc"/>
+                                                        <constraint firstAttribute="height" constant="98.5" id="5wS-uP-Dvc"/>
                                                     </constraints>
                                                     <attributedString key="attributedText">
                                                         <fragment content="description">
@@ -63,24 +81,6 @@
                                                     </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQ9-rt-xx2">
-                                                    <rect key="frame" x="18" y="206" width="130" height="48"/>
-                                                    <color key="backgroundColor" red="0.1433338821" green="0.41415053610000002" blue="0.54089087250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="eQ9-rt-xx2" secondAttribute="height" multiplier="4:3" constant="66" id="kll-Xc-8rm"/>
-                                                        <constraint firstAttribute="width" constant="130" id="oLf-N0-AfW"/>
-                                                    </constraints>
-                                                    <state key="normal" title="Öğren">
-                                                        <color key="titleColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                </button>
-                                                <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMh-SY-nEJ">
-                                                    <rect key="frame" x="204" y="206" width="130" height="48"/>
-                                                    <color key="backgroundColor" red="0.1410168111" green="0.41562640670000001" blue="0.55631041530000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <state key="normal" title="Dene">
-                                                        <color key="titleColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="eQ9-rt-xx2" firstAttribute="height" secondItem="qMh-SY-nEJ" secondAttribute="height" multiplier="0.846154" constant="7.3846153846153868" id="0Pc-is-2c2"/>
@@ -89,7 +89,7 @@
                                                 <constraint firstItem="eQ9-rt-xx2" firstAttribute="leading" secondItem="Tqf-wc-BTc" secondAttribute="leading" constant="18" id="H96-MU-gPX"/>
                                                 <constraint firstItem="n0u-Pc-yxN" firstAttribute="top" secondItem="Tqf-wc-BTc" secondAttribute="top" constant="18" id="MUO-kl-ovc"/>
                                                 <constraint firstAttribute="trailing" secondItem="UOw-Oi-GAV" secondAttribute="trailing" id="OGU-TM-T2O"/>
-                                                <constraint firstItem="xa4-Xc-eIQ" firstAttribute="top" secondItem="n0u-Pc-yxN" secondAttribute="bottom" constant="14" id="ScT-4n-i4t"/>
+                                                <constraint firstItem="xa4-Xc-eIQ" firstAttribute="top" secondItem="n0u-Pc-yxN" secondAttribute="bottom" constant="1" id="ScT-4n-i4t"/>
                                                 <constraint firstItem="xa4-Xc-eIQ" firstAttribute="leading" secondItem="Tqf-wc-BTc" secondAttribute="leading" constant="18" id="Xfw-4n-4yA"/>
                                                 <constraint firstAttribute="trailing" secondItem="qMh-SY-nEJ" secondAttribute="trailing" constant="38" id="YOx-if-w8u"/>
                                                 <constraint firstItem="qMh-SY-nEJ" firstAttribute="leading" secondItem="eQ9-rt-xx2" secondAttribute="trailing" constant="56" id="eyX-WY-GPD"/>
@@ -97,7 +97,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="qMh-SY-nEJ" secondAttribute="bottom" constant="34" id="ixl-6t-bje"/>
                                                 <constraint firstItem="eQ9-rt-xx2" firstAttribute="top" secondItem="qMh-SY-nEJ" secondAttribute="top" id="iyB-Xv-Nox"/>
                                                 <constraint firstItem="qMh-SY-nEJ" firstAttribute="baseline" secondItem="eQ9-rt-xx2" secondAttribute="firstBaseline" id="kj3-z7-GZM"/>
-                                                <constraint firstItem="eQ9-rt-xx2" firstAttribute="top" secondItem="xa4-Xc-eIQ" secondAttribute="bottom" constant="20.5" id="smw-Il-3FE"/>
+                                                <constraint firstItem="eQ9-rt-xx2" firstAttribute="top" secondItem="xa4-Xc-eIQ" secondAttribute="bottom" constant="33.5" id="smw-Il-3FE"/>
                                                 <constraint firstItem="eQ9-rt-xx2" firstAttribute="width" secondItem="qMh-SY-nEJ" secondAttribute="width" multiplier="0.842105" constant="20.526315789473685" id="vpz-HA-B0c"/>
                                                 <constraint firstItem="n0u-Pc-yxN" firstAttribute="leading" secondItem="Tqf-wc-BTc" secondAttribute="leading" constant="18" id="wBA-wx-Ej3"/>
                                             </constraints>
