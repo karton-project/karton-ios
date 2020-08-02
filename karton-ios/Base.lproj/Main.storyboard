@@ -56,6 +56,9 @@
                                                     <state key="normal" title="ÖĞREN">
                                                         <color key="titleColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="learnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fgd-LA-bYT"/>
+                                                    </connections>
                                                 </button>
                                                 <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMh-SY-nEJ">
                                                     <rect key="frame" x="204" y="206" width="130" height="48"/>
@@ -149,11 +152,47 @@
                     <connections>
                         <outlet property="noteButton" destination="3DV-fP-4Qg" id="AzB-e9-zes"/>
                         <outlet property="problemCollectionView" destination="y6Y-rq-eyV" id="wZ4-M2-5Cv"/>
+                        <segue destination="Nf7-af-MSN" kind="show" identifier="segueIdentifier" id="0q7-kz-fpv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85.507246376811594" y="79.6875"/>
+            <point key="canvasLocation" x="99" y="80"/>
+        </scene>
+        <!--Web Kit View Controller-->
+        <scene sceneID="t5c-CO-72e">
+            <objects>
+                <viewController id="Nf7-af-MSN" customClass="WebKitViewController" customModule="karton_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qcn-rd-tBU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSI-7U-LIf">
+                                <rect key="frame" x="20" y="121" width="374" height="684"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dSI-7U-LIf" firstAttribute="top" secondItem="cbu-eI-Tp9" secondAttribute="top" constant="33" id="9kj-il-TAZ"/>
+                            <constraint firstItem="dSI-7U-LIf" firstAttribute="leading" secondItem="Qcn-rd-tBU" secondAttribute="leadingMargin" id="GXB-GJ-5sk"/>
+                            <constraint firstItem="cbu-eI-Tp9" firstAttribute="bottom" secondItem="dSI-7U-LIf" secondAttribute="bottom" constant="57" id="L3P-Fe-Yqv"/>
+                            <constraint firstItem="dSI-7U-LIf" firstAttribute="trailing" secondItem="Qcn-rd-tBU" secondAttribute="trailingMargin" id="OgQ-AL-WtQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cbu-eI-Tp9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5rL-2b-bMK"/>
+                    <connections>
+                        <outlet property="WebView" destination="dSI-7U-LIf" id="NTh-y5-NiC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vr6-hT-QOM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="80"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CJX-du-ZEe">

@@ -30,6 +30,8 @@ UICollectionViewDataSource {
         
         item.nameUILabel.font = UIFont.boldSystemFont(ofSize: 25.0)
         
+        item.öğren.tag = indexPath.row
+        
         let öğrenLayer = item.öğren.layer
         let deneLayer = item.dene.layer
         
@@ -66,6 +68,18 @@ class HomePageViewController: UIViewController {
     
     @IBOutlet weak var noteButton: UIButton!
     
+    @IBAction func learnAction(_ sender: UIButton) {
+
+        let vc = WebKitViewController(nibName: "WebKitViewController", bundle: nil)
+        let indexpath = sender.self.tag
+        let content = contentsDataSource.contentsArray[indexpath]
+        let link = content.docsLink
+        vc.link = link
+        navigationController?.pushViewController(vc, animated: true)
+
+    }
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -76,16 +90,22 @@ class HomePageViewController: UIViewController {
         title = "Contents"
         
     }
+
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   // override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-    }
-    */
 
-}
+        
+        
+    }
+    
+
+
+
+
