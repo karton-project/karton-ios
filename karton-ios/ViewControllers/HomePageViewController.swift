@@ -16,17 +16,17 @@ UICollectionViewDataSource {
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return problemsDataSource.problemsArray.count
+        return contentsDataSource.contentsArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let item = collectionView.dequeueReusableCell(withReuseIdentifier: "ProblemCell", for: indexPath) as! HomePageCollectionViewCell
         
-        let problem = problemsDataSource.problemsArray[indexPath.row]
+        let content = contentsDataSource.contentsArray[indexPath.row]
         
-        item.problemImageView.image = UIImage(named: problem.imageName)
-        item.nameUILabel.text = problem.name
-        item.descriptionUILabel.text = problem.description
+        item.problemImageView.image = UIImage(named: String(content.id))
+        item.nameUILabel.text = content.name
+        item.descriptionUILabel.text = content.detail
         
         item.nameUILabel.font = UIFont.boldSystemFont(ofSize: 25.0)
         
@@ -60,7 +60,7 @@ UICollectionViewDataSource {
 
 class HomePageViewController: UIViewController {
     
-     let problemsDataSource = ProblemsDataSource()
+     let contentsDataSource = ContentsDataSource()
 
     @IBOutlet weak var problemCollectionView: UICollectionView!
     
@@ -73,7 +73,7 @@ class HomePageViewController: UIViewController {
         noteButton.layer.masksToBounds = true
         
         // Do any additional setup after loading the view.
-        title = "Problems"
+        title = "Contents"
         
     }
     
