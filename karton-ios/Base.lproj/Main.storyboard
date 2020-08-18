@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S4N-yH-6AO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7nX-GM-mBb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -8,7 +8,44 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home Page View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="yPO-FF-wjH">
+            <objects>
+                <tabBarController id="7nX-GM-mBb" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Rt-Sb-w6r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="sol-Qo-cno" kind="relationship" relationship="viewControllers" id="pJo-bR-zj1"/>
+                        <segue destination="ASB-BV-UMt" kind="relationship" relationship="viewControllers" id="s5j-tc-KNQ"/>
+                        <segue destination="MwE-7a-naP" kind="relationship" relationship="viewControllers" id="IlN-g4-hAg"/>
+                        <segue destination="2hd-62-eo3" kind="relationship" relationship="viewControllers" id="Y5B-vj-pbu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uke-LD-8y4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="707" y="-1319"/>
+        </scene>
+        <!--Öğren-->
+        <scene sceneID="i6T-al-nji">
+            <objects>
+                <navigationController id="sol-Qo-cno" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Öğren" image="pencil.circle" catalog="system" landscapeImage="pencil.circle" id="YPi-dA-BlW"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Ms-Vl-bR8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GEI-hv-4yd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WUZ-go-a9k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-564" y="-621"/>
+        </scene>
+        <!--Öğren-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomePageViewController" customModule="karton_ios" customModuleProvider="target" sceneMemberID="viewController">
@@ -120,17 +157,6 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="gwG-rw-cDw"/>
                                 </connections>
                             </collectionView>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Frh-zQ-gee">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="Öğren" image="pencil.circle" catalog="system" selectedImage="pencil.circle.fill" id="4pF-4d-8nq"/>
-                                    <tabBarItem title="Kodla" image="rectangle.3.offgrid" catalog="system" selectedImage="rectangle.3.offgrid.fill" id="u31-E0-gij"/>
-                                    <tabBarItem title="Oyna" image="tortoise" catalog="system" selectedImage="tortoise.fill" id="02F-CT-AEQ"/>
-                                    <tabBarItem title="Ayarlar" image="person.circle" catalog="system" selectedImage="person.circle.fill" id="hEA-bD-5dC"/>
-                                </items>
-                            </tabBar>
                             <button clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DV-fP-4Qg" customClass="RoundButton" customModule="karton_ios" customModuleProvider="target">
                                 <rect key="frame" x="325" y="711" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -148,7 +174,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="z5I-vQ-X1a"/>
+                    <navigationItem key="navigationItem" title="Öğren" id="z5I-vQ-X1a"/>
                     <connections>
                         <outlet property="noteButton" destination="3DV-fP-4Qg" id="AzB-e9-zes"/>
                         <outlet property="problemCollectionView" destination="y6Y-rq-eyV" id="wZ4-M2-5Cv"/>
@@ -168,7 +194,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSI-7U-LIf">
-                                <rect key="frame" x="20" y="121" width="374" height="684"/>
+                                <rect key="frame" x="20" y="121" width="374" height="635"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -194,33 +220,135 @@
             </objects>
             <point key="canvasLocation" x="929" y="80"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="CJX-du-ZEe">
+        <!--Text Recognition View Controller-->
+        <scene sceneID="tOD-Lc-90q">
             <objects>
-                <navigationController id="S4N-yH-6AO" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SJU-9W-LeT">
+                <viewController id="QsH-4U-gjC" customClass="TextRecognitionViewController" customModule="karton_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fI4-CU-qfw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="znx-0X-Ckx">
+                                <rect key="frame" x="20" y="88" width="374" height="725"/>
+                                <subviews>
+                                    <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDP-sC-Wl8" customClass="RoundButton" customModule="karton_ios" customModuleProvider="target">
+                                        <rect key="frame" x="306" y="657" width="60" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="otm-yC-8uD"/>
+                                            <constraint firstAttribute="height" constant="60" id="tDT-Bw-eUx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="tintColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="plus" catalog="system"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="29"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="capturePhoto:" destination="QsH-4U-gjC" eventType="touchUpInside" id="MQc-W5-peH"/>
+                                        </connections>
+                                    </button>
+                                    <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Su2-LS-lYH" customClass="RoundButton" customModule="karton_ios" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="657" width="60" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="DB0-KI-A9H"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="tintColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="checkmark" catalog="system"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="29"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Su2-LS-lYH" firstAttribute="leading" secondItem="znx-0X-Ckx" secondAttribute="leadingMargin" id="0NV-FR-ivk"/>
+                                    <constraint firstItem="Su2-LS-lYH" firstAttribute="bottom" secondItem="EDP-sC-Wl8" secondAttribute="bottom" id="9Qd-GX-rre"/>
+                                    <constraint firstItem="Su2-LS-lYH" firstAttribute="top" secondItem="EDP-sC-Wl8" secondAttribute="top" id="Jsq-hX-15p"/>
+                                    <constraint firstItem="EDP-sC-Wl8" firstAttribute="bottom" secondItem="znx-0X-Ckx" secondAttribute="bottomMargin" id="cfx-c1-Mj0"/>
+                                    <constraint firstItem="EDP-sC-Wl8" firstAttribute="trailing" secondItem="znx-0X-Ckx" secondAttribute="trailingMargin" id="t73-2M-ZIO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="znx-0X-Ckx" firstAttribute="top" secondItem="nPe-xf-U3m" secondAttribute="top" id="KH4-gN-gVT"/>
+                            <constraint firstItem="znx-0X-Ckx" firstAttribute="leading" secondItem="fI4-CU-qfw" secondAttribute="leadingMargin" id="TKC-2g-GNh"/>
+                            <constraint firstItem="znx-0X-Ckx" firstAttribute="trailing" secondItem="fI4-CU-qfw" secondAttribute="trailingMargin" id="asG-4u-4Mn"/>
+                            <constraint firstItem="znx-0X-Ckx" firstAttribute="bottom" secondItem="nPe-xf-U3m" secondAttribute="bottom" id="y1K-bn-gfl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nPe-xf-U3m"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sth-Ef-Lej"/>
+                    <connections>
+                        <outlet property="checkButton" destination="Su2-LS-lYH" id="RRS-uf-4GP"/>
+                        <outlet property="previewView" destination="znx-0X-Ckx" id="GCs-Df-IQI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aja-ht-AdJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1833" y="80"/>
+        </scene>
+        <!--Kodla-->
+        <scene sceneID="pw9-cz-Ruq">
+            <objects>
+                <navigationController id="ASB-BV-UMt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Kodla" image="rectangle.3.offgrid" catalog="system" id="t9c-Xh-fT0"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tgz-MO-i1X">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yUs-wa-5Pg"/>
+                        <segue destination="QsH-4U-gjC" kind="relationship" relationship="rootViewController" id="f65-xb-a2u"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1uN-Bl-0nO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hbI-k1-Lnr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-765" y="80"/>
+            <point key="canvasLocation" x="333" y="-621"/>
+        </scene>
+        <!--Oyna-->
+        <scene sceneID="jvA-Bs-EjQ">
+            <objects>
+                <navigationController id="MwE-7a-naP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Oyna" image="tortoise" catalog="system" id="2YL-Tr-wnM"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ezP-My-Ya0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lec-WB-VGa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1151" y="-621"/>
+        </scene>
+        <!--Ayarlar-->
+        <scene sceneID="Rjl-7A-1q6">
+            <objects>
+                <navigationController id="2hd-62-eo3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ayarlar" image="person.circle" catalog="system" id="f0z-Pg-jMF"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="duX-1x-hQa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qVw-qs-hB1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957" y="-621"/>
         </scene>
     </scenes>
     <resources>
         <image name="0" width="575" height="436"/>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="pencil.circle" catalog="system" width="128" height="121"/>
-        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
-        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="rectangle.3.offgrid" catalog="system" width="128" height="80"/>
-        <image name="rectangle.3.offgrid.fill" catalog="system" width="128" height="81"/>
         <image name="tortoise" catalog="system" width="128" height="68"/>
-        <image name="tortoise.fill" catalog="system" width="128" height="66"/>
     </resources>
 </document>
