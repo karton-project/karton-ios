@@ -123,7 +123,7 @@ class HomePageViewController: UIViewController, UIApplicationDelegate {
         noteButton.layer.masksToBounds = true
         
         // Do any additional setup after loading the view.
-        title = "Contents"
+        title = "Öğren"
         
     }
 

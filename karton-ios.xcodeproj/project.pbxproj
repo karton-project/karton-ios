@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		D43EACC424D712C4007797CF /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43EACC324D712C4007797CF /* Content.swift */; };
 		D43EACC624D712F6007797CF /* ContentsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43EACC524D712F6007797CF /* ContentsDataSource.swift */; };
 		D43EACC824D71355007797CF /* JSONs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43EACC724D71355007797CF /* JSONs.swift */; };
+		D44DFD1224F2D929008B210F /* 1st.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D44DFD1124F2D929008B210F /* 1st.jpg */; };
+		D44DFD1424F2D931008B210F /* 2nd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D44DFD1324F2D931008B210F /* 2nd.jpg */; };
+		D44DFD1624F2DB4A008B210F /* UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44DFD1524F2DB4A008B210F /* UIUtilities.swift */; };
 		D48EE309249ADB2200F1C598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EE308249ADB2200F1C598 /* AppDelegate.swift */; };
 		D48EE30B249ADB2200F1C598 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EE30A249ADB2200F1C598 /* SceneDelegate.swift */; };
 		D48EE310249ADB2200F1C598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48EE30E249ADB2200F1C598 /* Main.storyboard */; };
@@ -60,6 +63,9 @@
 		D43EACC324D712C4007797CF /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		D43EACC524D712F6007797CF /* ContentsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsDataSource.swift; sourceTree = "<group>"; };
 		D43EACC724D71355007797CF /* JSONs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONs.swift; sourceTree = "<group>"; };
+		D44DFD1124F2D929008B210F /* 1st.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1st.jpg; sourceTree = "<group>"; };
+		D44DFD1324F2D931008B210F /* 2nd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2nd.jpg; sourceTree = "<group>"; };
+		D44DFD1524F2DB4A008B210F /* UIUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtilities.swift; sourceTree = "<group>"; };
 		D48EE305249ADB2200F1C598 /* kart-ON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kart-ON.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48EE308249ADB2200F1C598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D48EE30A249ADB2200F1C598 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +123,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D44DFD1024F2D41B008B210F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D44DFD1124F2D929008B210F /* 1st.jpg */,
+				D44DFD1324F2D931008B210F /* 2nd.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		D48EE2FC249ADB2200F1C598 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +157,7 @@
 		D48EE307249ADB2200F1C598 /* karton-ios */ = {
 			isa = PBXGroup;
 			children = (
+				D44DFD1024F2D41B008B210F /* Resources */,
 				D4F625FC24BA32ED00EDB10B /* Design */,
 				D4F625F224B9AB8400EDB10B /* Cells */,
 				D4F625F724B9AF1300EDB10B /* Models */,
@@ -178,6 +194,7 @@
 		D4F625EF24B9A43D00EDB10B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D44DFD1524F2DB4A008B210F /* UIUtilities.swift */,
 				D4F625F024B9A46900EDB10B /* HomePageViewController.swift */,
 				D42C8A5B24D7324600170880 /* WebKitViewController.swift */,
 				D4E56B7024E6A8EB005C1BE3 /* TextRecognitionViewController.swift */,
@@ -221,7 +238,6 @@
 				62421AF1181E5ED76C112FD2 /* Pods-karton-iosTests.debug.xcconfig */,
 				1652AE4D85D774A33932C05F /* Pods-karton-iosTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -237,6 +253,7 @@
 				D48EE302249ADB2200F1C598 /* Frameworks */,
 				D48EE303249ADB2200F1C598 /* Resources */,
 				941004B0C0967AC23A0E869B /* [CP] Embed Pods Frameworks */,
+				16A08EF707F4272067EB9D75 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -275,6 +292,7 @@
 				D48EE323249ADB2400F1C598 /* Frameworks */,
 				D48EE324249ADB2400F1C598 /* Resources */,
 				1A2E1E8B9C85C13A9D5818CE /* [CP] Embed Pods Frameworks */,
+				4070461B7986BC59048C6A3A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -334,10 +352,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44DFD1424F2D931008B210F /* 2nd.jpg in Resources */,
 				D48EE315249ADB2400F1C598 /* LaunchScreen.storyboard in Resources */,
 				D426244924F28A6D008B47C1 /* GoogleService-Info.plist in Resources */,
 				D48EE312249ADB2400F1C598 /* Assets.xcassets in Resources */,
 				D48EE310249ADB2200F1C598 /* Main.storyboard in Resources */,
+				D44DFD1224F2D929008B210F /* 1st.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +378,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		16A08EF707F4272067EB9D75 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-karton-ios/Pods-karton-ios-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-karton-ios/Pods-karton-ios-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-karton-ios/Pods-karton-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1A2E1E8B9C85C13A9D5818CE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,6 +410,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-karton-ios-karton-iosUITests/Pods-karton-ios-karton-iosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4070461B7986BC59048C6A3A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-karton-ios-karton-iosUITests/Pods-karton-ios-karton-iosUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-karton-ios-karton-iosUITests/Pods-karton-ios-karton-iosUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-karton-ios-karton-iosUITests/Pods-karton-ios-karton-iosUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		60AE7688C3C4BB0BC8D9A553 /* [CP] Check Pods Manifest.lock */ = {
@@ -473,6 +527,7 @@
 				D43EACC424D712C4007797CF /* Content.swift in Sources */,
 				D4F625F124B9A46900EDB10B /* HomePageViewController.swift in Sources */,
 				D48EE309249ADB2200F1C598 /* AppDelegate.swift in Sources */,
+				D44DFD1624F2DB4A008B210F /* UIUtilities.swift in Sources */,
 				D48EE30B249ADB2200F1C598 /* SceneDelegate.swift in Sources */,
 				D42C8A5C24D7324600170880 /* WebKitViewController.swift in Sources */,
 			);

@@ -48,7 +48,7 @@
         <!--Öğren-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomePageViewController" customModule="karton_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomePageViewController" customModule="kart_ON" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +64,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProblemCell" id="pkD-8Q-eCd" customClass="HomePageCollectionViewCell" customModule="karton_ios" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProblemCell" id="pkD-8Q-eCd" customClass="HomePageCollectionViewCell" customModule="kart_ON" customModuleProvider="target">
                                         <rect key="frame" x="21" y="0.0" width="372" height="288"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Tqf-wc-BTc">
@@ -160,7 +160,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="gwG-rw-cDw"/>
                                 </connections>
                             </collectionView>
-                            <button clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DV-fP-4Qg" customClass="RoundButton" customModule="karton_ios" customModuleProvider="target">
+                            <button clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DV-fP-4Qg" customClass="RoundButton" customModule="kart_ON" customModuleProvider="target">
                                 <rect key="frame" x="325" y="711" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -191,7 +191,7 @@
         <!--Web Kit View Controller-->
         <scene sceneID="t5c-CO-72e">
             <objects>
-                <viewController id="Nf7-af-MSN" customClass="WebKitViewController" customModule="karton_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Nf7-af-MSN" customClass="WebKitViewController" customModule="kart_ON" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qcn-rd-tBU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,33 +226,60 @@
         <!--Text Recognition View Controller-->
         <scene sceneID="tOD-Lc-90q">
             <objects>
-                <viewController id="QsH-4U-gjC" customClass="TextRecognitionViewController" customModule="karton_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QsH-4U-gjC" customClass="TextRecognitionViewController" customModule="kart_ON" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fI4-CU-qfw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPT-5T-kjK">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fgf-HR-SqZ">
+                                <rect key="frame" x="0.0" y="128" width="414" height="257"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wgS-XW-vGf">
+                                <rect key="frame" x="0.0" y="584" width="414" height="198"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="198" id="YdB-bM-4Lo"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="QsH-4U-gjC" id="lJe-fY-vd3"/>
+                                    <outlet property="delegate" destination="QsH-4U-gjC" id="bor-gV-fEx"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="923-qe-TiP">
+                                <rect key="frame" x="153" y="473" width="108" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Jxm-sk-Hi5"/>
+                                </constraints>
+                                <state key="normal" title="Find Text"/>
+                                <connections>
+                                    <action selector="findText:" destination="QsH-4U-gjC" eventType="touchUpInside" id="27a-yV-3VV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="gPT-5T-kjK" firstAttribute="centerX" secondItem="fI4-CU-qfw" secondAttribute="centerX" id="ALW-lo-YGx"/>
-                            <constraint firstItem="gPT-5T-kjK" firstAttribute="bottom" secondItem="nPe-xf-U3m" secondAttribute="bottom" id="GrU-aU-1l0"/>
-                            <constraint firstItem="gPT-5T-kjK" firstAttribute="leading" secondItem="nPe-xf-U3m" secondAttribute="leading" id="qxp-5Q-TUL"/>
-                            <constraint firstItem="gPT-5T-kjK" firstAttribute="top" secondItem="nPe-xf-U3m" secondAttribute="top" id="r8a-EA-Ya6"/>
+                            <constraint firstItem="wgS-XW-vGf" firstAttribute="top" secondItem="923-qe-TiP" secondAttribute="bottom" constant="63" id="7kY-Dq-d4x"/>
+                            <constraint firstItem="fgf-HR-SqZ" firstAttribute="top" secondItem="nPe-xf-U3m" secondAttribute="top" constant="40" id="Ap3-UB-YhF"/>
+                            <constraint firstItem="923-qe-TiP" firstAttribute="top" secondItem="fgf-HR-SqZ" secondAttribute="bottom" constant="88" id="NIU-YS-zlZ"/>
+                            <constraint firstItem="fgf-HR-SqZ" firstAttribute="leading" secondItem="nPe-xf-U3m" secondAttribute="leading" id="UHk-Hc-m4a"/>
+                            <constraint firstItem="nPe-xf-U3m" firstAttribute="bottom" secondItem="wgS-XW-vGf" secondAttribute="bottom" constant="31" id="Zb5-40-zmH"/>
+                            <constraint firstItem="fgf-HR-SqZ" firstAttribute="trailing" secondItem="wgS-XW-vGf" secondAttribute="trailing" id="bw8-tk-G5R"/>
+                            <constraint firstItem="923-qe-TiP" firstAttribute="centerX" secondItem="wgS-XW-vGf" secondAttribute="centerX" id="cmI-wE-bNS"/>
+                            <constraint firstItem="fgf-HR-SqZ" firstAttribute="leading" secondItem="wgS-XW-vGf" secondAttribute="leading" id="dh5-S7-ROj"/>
+                            <constraint firstItem="923-qe-TiP" firstAttribute="leading" secondItem="nPe-xf-U3m" secondAttribute="leading" constant="153" id="goR-Yx-AEa"/>
+                            <constraint firstItem="fgf-HR-SqZ" firstAttribute="centerX" secondItem="fI4-CU-qfw" secondAttribute="centerX" id="xNP-TM-S5Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nPe-xf-U3m"/>
                     </view>
                     <navigationItem key="navigationItem" id="Sth-Ef-Lej"/>
                     <connections>
-                        <outlet property="photoView" destination="gPT-5T-kjK" id="9Nk-YZ-pMN"/>
+                        <outlet property="findTextButton" destination="923-qe-TiP" id="esV-zE-ViJ"/>
+                        <outlet property="image" destination="fgf-HR-SqZ" id="kd3-rn-Rov"/>
+                        <outlet property="pickerView" destination="wgS-XW-vGf" id="isY-NK-csY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aja-ht-AdJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1831.8840579710147" y="79.6875"/>
+            <point key="canvasLocation" x="1830.4347826086957" y="77.678571428571431"/>
         </scene>
         <!--Kodla-->
         <scene sceneID="pw9-cz-Ruq">
