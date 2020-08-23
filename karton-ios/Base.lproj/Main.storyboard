@@ -103,6 +103,9 @@
                                                     <state key="normal" title="DENE">
                                                         <color key="titleColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="tryAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w18-Dn-wII"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xa4-Xc-eIQ">
                                                     <rect key="frame" x="18" y="74" width="86" height="98.5"/>
@@ -228,72 +231,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="znx-0X-Ckx">
-                                <rect key="frame" x="20" y="88" width="374" height="725"/>
-                                <subviews>
-                                    <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDP-sC-Wl8" customClass="RoundButton" customModule="karton_ios" customModuleProvider="target">
-                                        <rect key="frame" x="306" y="657" width="60" height="60"/>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="otm-yC-8uD"/>
-                                            <constraint firstAttribute="height" constant="60" id="tDT-Bw-eUx"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <color key="tintColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="plus" catalog="system"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="29"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="capturePhoto:" destination="QsH-4U-gjC" eventType="touchUpInside" id="MQc-W5-peH"/>
-                                        </connections>
-                                    </button>
-                                    <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Su2-LS-lYH" customClass="RoundButton" customModule="karton_ios" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="657" width="60" height="60"/>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="DB0-KI-A9H"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <color key="tintColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="checkmark" catalog="system"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="29"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPT-5T-kjK">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="Su2-LS-lYH" firstAttribute="leading" secondItem="znx-0X-Ckx" secondAttribute="leadingMargin" id="0NV-FR-ivk"/>
-                                    <constraint firstItem="Su2-LS-lYH" firstAttribute="bottom" secondItem="EDP-sC-Wl8" secondAttribute="bottom" id="9Qd-GX-rre"/>
-                                    <constraint firstItem="Su2-LS-lYH" firstAttribute="top" secondItem="EDP-sC-Wl8" secondAttribute="top" id="Jsq-hX-15p"/>
-                                    <constraint firstItem="EDP-sC-Wl8" firstAttribute="bottom" secondItem="znx-0X-Ckx" secondAttribute="bottomMargin" id="cfx-c1-Mj0"/>
-                                    <constraint firstItem="EDP-sC-Wl8" firstAttribute="trailing" secondItem="znx-0X-Ckx" secondAttribute="trailingMargin" id="t73-2M-ZIO"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="znx-0X-Ckx" firstAttribute="top" secondItem="nPe-xf-U3m" secondAttribute="top" id="KH4-gN-gVT"/>
-                            <constraint firstItem="znx-0X-Ckx" firstAttribute="leading" secondItem="fI4-CU-qfw" secondAttribute="leadingMargin" id="TKC-2g-GNh"/>
-                            <constraint firstItem="znx-0X-Ckx" firstAttribute="trailing" secondItem="fI4-CU-qfw" secondAttribute="trailingMargin" id="asG-4u-4Mn"/>
-                            <constraint firstItem="znx-0X-Ckx" firstAttribute="bottom" secondItem="nPe-xf-U3m" secondAttribute="bottom" id="y1K-bn-gfl"/>
+                            <constraint firstItem="gPT-5T-kjK" firstAttribute="centerX" secondItem="fI4-CU-qfw" secondAttribute="centerX" id="ALW-lo-YGx"/>
+                            <constraint firstItem="gPT-5T-kjK" firstAttribute="bottom" secondItem="nPe-xf-U3m" secondAttribute="bottom" id="GrU-aU-1l0"/>
+                            <constraint firstItem="gPT-5T-kjK" firstAttribute="leading" secondItem="nPe-xf-U3m" secondAttribute="leading" id="qxp-5Q-TUL"/>
+                            <constraint firstItem="gPT-5T-kjK" firstAttribute="top" secondItem="nPe-xf-U3m" secondAttribute="top" id="r8a-EA-Ya6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nPe-xf-U3m"/>
                     </view>
                     <navigationItem key="navigationItem" id="Sth-Ef-Lej"/>
                     <connections>
-                        <outlet property="checkButton" destination="Su2-LS-lYH" id="RRS-uf-4GP"/>
-                        <outlet property="previewView" destination="znx-0X-Ckx" id="GCs-Df-IQI"/>
+                        <outlet property="photoView" destination="gPT-5T-kjK" id="9Nk-YZ-pMN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aja-ht-AdJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1833" y="80"/>
+            <point key="canvasLocation" x="1831.8840579710147" y="79.6875"/>
         </scene>
         <!--Kodla-->
         <scene sceneID="pw9-cz-Ruq">
@@ -343,11 +302,9 @@
     </scenes>
     <resources>
         <image name="0" width="575" height="436"/>
-        <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="pencil.circle" catalog="system" width="128" height="121"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
-        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="rectangle.3.offgrid" catalog="system" width="128" height="80"/>
         <image name="tortoise" catalog="system" width="128" height="68"/>
     </resources>

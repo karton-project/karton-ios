@@ -79,6 +79,20 @@ class HomePageViewController: UIViewController, UIApplicationDelegate {
 
     }
     
+    @IBAction func tryAction(_ sender: UIButton) {
+        
+        let indexpath = sender.self.tag
+        let content = contentsDataSource.contentsArray[indexpath]
+        if content.practiceType == "url" {
+            let link = content.instruction
+            let vc = WebKitViewController(nibName: "WebKitViewController", bundle: nil)
+            vc.link = link
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        // else demo camera view
+    }
+    
+    
     var window: UIWindow?
     
     func application(_ application: UIApplication,
@@ -90,7 +104,7 @@ class HomePageViewController: UIViewController, UIApplicationDelegate {
             
             // Set up the second View Controller
             
-            // Set up the Tab Bar Controller to have two tabs
+            // Set up the Tab Bar Controller to have four tabs
             let tabBarController = UITabBarController()
             tabBarController.viewControllers = [vc1]
             

@@ -10,22 +10,25 @@ import UIKit
 import AVFoundation
 
 class TextRecognitionViewController: UIViewController {
-
-    @IBOutlet weak var previewView: UIView!
-    
-    @IBOutlet weak var checkButton: RoundButton!
-    
-   
-    @IBAction func capturePhoto(_ sender: Any) {
-        
-    }
     
     
+    @IBOutlet weak var photoView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                    let cameraView = UIImagePickerController()
+                    cameraView.delegate = self as?
+                        UIImagePickerControllerDelegate &
+                        UINavigationControllerDelegate
+                    cameraView.sourceType = .camera
+                    self.present(cameraView, animated: true, completion: nil)
+            photoView = cameraView.view
+                }
+
     }
     
     
