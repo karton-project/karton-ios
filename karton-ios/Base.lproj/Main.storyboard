@@ -232,10 +232,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fgf-HR-SqZ">
-                                <rect key="frame" x="0.0" y="128" width="414" height="257"/>
+                                <rect key="frame" x="0.0" y="84" width="414" height="350"/>
                             </imageView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wgS-XW-vGf">
-                                <rect key="frame" x="0.0" y="584" width="414" height="198"/>
+                                <rect key="frame" x="0.0" y="633" width="414" height="198"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="198" id="YdB-bM-4Lo"/>
                                 </constraints>
@@ -245,7 +245,7 @@
                                 </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="923-qe-TiP">
-                                <rect key="frame" x="153" y="473" width="108" height="48"/>
+                                <rect key="frame" x="153" y="522" width="108" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Jxm-sk-Hi5"/>
                                 </constraints>
@@ -279,7 +279,71 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aja-ht-AdJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1830.4347826086957" y="77.678571428571431"/>
+            <point key="canvasLocation" x="2487" y="88"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="NYe-zK-gmh">
+            <objects>
+                <viewController id="So0-A2-RVs" customClass="CameraViewController" customModule="kart_ON" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O8p-x3-raF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1xe-9A-JBB">
+                                <rect key="frame" x="0.0" y="88" width="414" height="581"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uUw-kb-K6R">
+                                <rect key="frame" x="171" y="678" width="232" height="135"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rh4-2Q-T0i" customClass="RoundButton" customModule="kart_ON" customModuleProvider="target">
+                                <rect key="frame" x="48" y="715.5" width="60" height="60"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="iMZ-dn-B59"/>
+                                    <constraint firstAttribute="width" constant="60" id="lXg-cr-0hQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="plus" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="29"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="detectTextAction:" destination="So0-A2-RVs" eventType="touchUpInside" id="s7M-YK-TmV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bC4-0y-KIQ" firstAttribute="trailing" secondItem="uUw-kb-K6R" secondAttribute="trailing" constant="11" id="Aoc-51-t8v"/>
+                            <constraint firstItem="1xe-9A-JBB" firstAttribute="top" secondItem="bC4-0y-KIQ" secondAttribute="top" id="D2D-Cv-ES0"/>
+                            <constraint firstItem="1xe-9A-JBB" firstAttribute="leading" secondItem="bC4-0y-KIQ" secondAttribute="leading" id="Iz3-Q0-98l"/>
+                            <constraint firstItem="uUw-kb-K6R" firstAttribute="centerY" secondItem="Rh4-2Q-T0i" secondAttribute="centerY" id="KX1-ML-gmV"/>
+                            <constraint firstItem="uUw-kb-K6R" firstAttribute="leading" secondItem="Rh4-2Q-T0i" secondAttribute="trailing" constant="63" id="NIV-ny-bew"/>
+                            <constraint firstItem="1xe-9A-JBB" firstAttribute="centerX" secondItem="O8p-x3-raF" secondAttribute="centerX" id="NOD-dh-HGt"/>
+                            <constraint firstAttribute="bottom" secondItem="1xe-9A-JBB" secondAttribute="bottom" constant="227" id="dLi-fH-8XN"/>
+                            <constraint firstItem="uUw-kb-K6R" firstAttribute="top" secondItem="1xe-9A-JBB" secondAttribute="bottom" constant="9" id="gBk-4q-lun"/>
+                            <constraint firstItem="uUw-kb-K6R" firstAttribute="bottom" secondItem="bC4-0y-KIQ" secondAttribute="bottom" id="jzP-jt-Zhg"/>
+                            <constraint firstItem="Rh4-2Q-T0i" firstAttribute="leading" secondItem="bC4-0y-KIQ" secondAttribute="leading" constant="48" id="x5x-iG-cDp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bC4-0y-KIQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vH4-fE-l3Y"/>
+                    <connections>
+                        <outlet property="cameraView" destination="1xe-9A-JBB" id="SYf-mN-Kpe"/>
+                        <outlet property="textView" destination="uUw-kb-K6R" id="H33-xG-sx8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="snD-Rw-nhe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1699" y="88"/>
         </scene>
         <!--Kodla-->
         <scene sceneID="pw9-cz-Ruq">
@@ -291,7 +355,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="QsH-4U-gjC" kind="relationship" relationship="rootViewController" id="f65-xb-a2u"/>
+                        <segue destination="So0-A2-RVs" kind="relationship" relationship="rootViewController" id="So8-d4-8Cr"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hbI-k1-Lnr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -310,7 +374,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lec-WB-VGa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1151" y="-621"/>
+            <point key="canvasLocation" x="1112" y="-621"/>
         </scene>
         <!--Ayarlar-->
         <scene sceneID="Rjl-7A-1q6">
@@ -332,6 +396,7 @@
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="pencil.circle" catalog="system" width="128" height="121"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="rectangle.3.offgrid" catalog="system" width="128" height="80"/>
         <image name="tortoise" catalog="system" width="128" height="68"/>
     </resources>

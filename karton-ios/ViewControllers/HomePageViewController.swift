@@ -31,6 +31,7 @@ UICollectionViewDataSource {
         item.nameUILabel.font = UIFont.boldSystemFont(ofSize: 25.0)
         
         item.öğren.tag = indexPath.row
+        item.dene.tag  = indexPath.row
         
         let öğrenLayer = item.öğren.layer
         let deneLayer = item.dene.layer

@@ -13,6 +13,7 @@ target 'karton-ios' do
   # https://firebase.google.com/docs/ios/setup#available-pods
 
   pod 'GoogleMLKit/TextRecognition'
+  pod 'GoogleMLKit/PoseDetection'
 
 
   target 'karton-iosTests' do

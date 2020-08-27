@@ -16,6 +16,7 @@
 		D44DFD1224F2D929008B210F /* 1st.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D44DFD1124F2D929008B210F /* 1st.jpg */; };
 		D44DFD1424F2D931008B210F /* 2nd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D44DFD1324F2D931008B210F /* 2nd.jpg */; };
 		D44DFD1624F2DB4A008B210F /* UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44DFD1524F2DB4A008B210F /* UIUtilities.swift */; };
+		D47EC55424F840E5003AC8D9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47EC55324F840E5003AC8D9 /* CameraViewController.swift */; };
 		D48EE309249ADB2200F1C598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EE308249ADB2200F1C598 /* AppDelegate.swift */; };
 		D48EE30B249ADB2200F1C598 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EE30A249ADB2200F1C598 /* SceneDelegate.swift */; };
 		D48EE310249ADB2200F1C598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48EE30E249ADB2200F1C598 /* Main.storyboard */; };
@@ -66,6 +67,7 @@
 		D44DFD1124F2D929008B210F /* 1st.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1st.jpg; sourceTree = "<group>"; };
 		D44DFD1324F2D931008B210F /* 2nd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2nd.jpg; sourceTree = "<group>"; };
 		D44DFD1524F2DB4A008B210F /* UIUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtilities.swift; sourceTree = "<group>"; };
+		D47EC55324F840E5003AC8D9 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		D48EE305249ADB2200F1C598 /* kart-ON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kart-ON.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48EE308249ADB2200F1C598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D48EE30A249ADB2200F1C598 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				D4F625F024B9A46900EDB10B /* HomePageViewController.swift */,
 				D42C8A5B24D7324600170880 /* WebKitViewController.swift */,
 				D4E56B7024E6A8EB005C1BE3 /* TextRecognitionViewController.swift */,
+				D47EC55324F840E5003AC8D9 /* CameraViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				D43EACC824D71355007797CF /* JSONs.swift in Sources */,
 				D4E56B7124E6A8EB005C1BE3 /* TextRecognitionViewController.swift in Sources */,
 				D4F625FF24BA331E00EDB10B /* RoundButton.swift in Sources */,
+				D47EC55424F840E5003AC8D9 /* CameraViewController.swift in Sources */,
 				D43EACC424D712C4007797CF /* Content.swift in Sources */,
 				D4F625F124B9A46900EDB10B /* HomePageViewController.swift in Sources */,
 				D48EE309249ADB2200F1C598 /* AppDelegate.swift in Sources */,
