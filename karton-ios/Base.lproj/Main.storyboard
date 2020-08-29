@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7nX-GM-mBb">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -15,7 +16,6 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Rt-Sb-w6r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="sol-Qo-cno" kind="relationship" relationship="viewControllers" id="pJo-bR-zj1"/>
@@ -26,17 +26,20 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uke-LD-8y4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="707" y="-1319"/>
+            <point key="canvasLocation" x="704" y="-1657"/>
         </scene>
         <!--Öğren-->
         <scene sceneID="i6T-al-nji">
             <objects>
-                <navigationController id="sol-Qo-cno" sceneMemberID="viewController">
+                <navigationController modalTransitionStyle="flipHorizontal" hidesBarsWhenVerticallyCompact="YES" id="sol-Qo-cno" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Öğren" image="pencil.circle" catalog="system" landscapeImage="pencil.circle" id="YPi-dA-BlW"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Ms-Vl-bR8">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BqB-R4-1Mr">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GEI-hv-4yd"/>
                     </connections>
@@ -50,14 +53,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomePageViewController" customModule="kart_ON" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="y6Y-rq-eyV">
-                                <rect key="frame" x="0.0" y="88" width="414" height="693"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="y6Y-rq-eyV">
+                                <rect key="frame" x="41" y="20" width="855" height="324"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ejp-kQ-Mdc">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ejp-kQ-Mdc">
                                     <size key="itemSize" width="372" height="288"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -65,7 +68,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProblemCell" id="pkD-8Q-eCd" customClass="HomePageCollectionViewCell" customModule="kart_ON" customModuleProvider="target">
-                                        <rect key="frame" x="21" y="0.0" width="372" height="288"/>
+                                        <rect key="frame" x="0.0" y="6" width="372" height="288"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Tqf-wc-BTc">
                                             <rect key="frame" x="0.0" y="0.0" width="372" height="288"/>
@@ -160,9 +163,8 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="gwG-rw-cDw"/>
                                 </connections>
                             </collectionView>
-                            <button clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DV-fP-4Qg" customClass="RoundButton" customModule="kart_ON" customModuleProvider="target">
-                                <rect key="frame" x="325" y="711" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DV-fP-4Qg" customClass="RoundButton" customModule="kart_ON" customModuleProvider="target">
+                                <rect key="frame" x="776" y="269" width="60" height="59"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="tintColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -175,6 +177,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3DV-fP-4Qg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="225" id="3Eg-1B-szT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3DV-fP-4Qg" secondAttribute="bottom" constant="16" id="bXt-oz-fDc"/>
+                            <constraint firstItem="3DV-fP-4Qg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="732" id="k2w-aZ-CL5"/>
+                            <constraint firstItem="3DV-fP-4Qg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="pfB-Ks-mBn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Öğren" id="z5I-vQ-X1a"/>
@@ -186,18 +194,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="99" y="80"/>
+            <point key="canvasLocation" x="-565" y="362"/>
         </scene>
         <!--Web Kit View Controller-->
         <scene sceneID="t5c-CO-72e">
             <objects>
                 <viewController id="Nf7-af-MSN" customClass="WebKitViewController" customModule="kart_ON" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qcn-rd-tBU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSI-7U-LIf">
-                                <rect key="frame" x="20" y="121" width="374" height="635"/>
+                                <rect key="frame" x="60" y="77" width="776" height="210"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -221,21 +229,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vr6-hT-QOM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="80"/>
+            <point key="canvasLocation" x="-565" y="1297"/>
         </scene>
         <!--Text Recognition View Controller-->
         <scene sceneID="tOD-Lc-90q">
             <objects>
                 <viewController id="QsH-4U-gjC" customClass="TextRecognitionViewController" customModule="kart_ON" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fI4-CU-qfw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fgf-HR-SqZ">
-                                <rect key="frame" x="0.0" y="84" width="414" height="350"/>
+                                <rect key="frame" x="44" y="40" width="808" height="0.0"/>
                             </imageView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wgS-XW-vGf">
-                                <rect key="frame" x="0.0" y="633" width="414" height="198"/>
+                                <rect key="frame" x="44" y="239" width="808" height="123"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="198" id="YdB-bM-4Lo"/>
                                 </constraints>
@@ -245,7 +253,7 @@
                                 </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="923-qe-TiP">
-                                <rect key="frame" x="153" y="522" width="108" height="48"/>
+                                <rect key="frame" x="197" y="128" width="502" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Jxm-sk-Hi5"/>
                                 </constraints>
@@ -279,29 +287,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aja-ht-AdJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2487" y="88"/>
+            <point key="canvasLocation" x="2535" y="261"/>
         </scene>
-        <!--Camera View Controller-->
+        <!--Kodla-->
         <scene sceneID="NYe-zK-gmh">
             <objects>
                 <viewController id="So0-A2-RVs" customClass="CameraViewController" customModule="kart_ON" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O8p-x3-raF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1xe-9A-JBB">
-                                <rect key="frame" x="0.0" y="88" width="414" height="581"/>
+                                <rect key="frame" x="44" y="0.0" width="808" height="187"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uUw-kb-K6R">
-                                <rect key="frame" x="171" y="678" width="232" height="135"/>
+                                <rect key="frame" x="608" y="196" width="233" height="148"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="233" id="Ucz-78-jP0"/>
+                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rh4-2Q-T0i" customClass="RoundButton" customModule="kart_ON" customModuleProvider="target">
-                                <rect key="frame" x="48" y="715.5" width="60" height="60"/>
+                                <rect key="frame" x="92" y="240" width="60" height="60"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="iMZ-dn-B59"/>
@@ -322,20 +333,19 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bC4-0y-KIQ" firstAttribute="trailing" secondItem="uUw-kb-K6R" secondAttribute="trailing" constant="11" id="Aoc-51-t8v"/>
+                            <constraint firstItem="uUw-kb-K6R" firstAttribute="centerY" secondItem="Rh4-2Q-T0i" secondAttribute="centerY" id="7Eu-6a-Wnl"/>
+                            <constraint firstItem="bC4-0y-KIQ" firstAttribute="trailing" secondItem="uUw-kb-K6R" secondAttribute="trailing" constant="11" id="8rX-1W-ZQP"/>
+                            <constraint firstItem="uUw-kb-K6R" firstAttribute="top" secondItem="1xe-9A-JBB" secondAttribute="bottom" constant="9" id="Bkv-LV-PAI"/>
                             <constraint firstItem="1xe-9A-JBB" firstAttribute="top" secondItem="bC4-0y-KIQ" secondAttribute="top" id="D2D-Cv-ES0"/>
                             <constraint firstItem="1xe-9A-JBB" firstAttribute="leading" secondItem="bC4-0y-KIQ" secondAttribute="leading" id="Iz3-Q0-98l"/>
-                            <constraint firstItem="uUw-kb-K6R" firstAttribute="centerY" secondItem="Rh4-2Q-T0i" secondAttribute="centerY" id="KX1-ML-gmV"/>
-                            <constraint firstItem="uUw-kb-K6R" firstAttribute="leading" secondItem="Rh4-2Q-T0i" secondAttribute="trailing" constant="63" id="NIV-ny-bew"/>
                             <constraint firstItem="1xe-9A-JBB" firstAttribute="centerX" secondItem="O8p-x3-raF" secondAttribute="centerX" id="NOD-dh-HGt"/>
                             <constraint firstAttribute="bottom" secondItem="1xe-9A-JBB" secondAttribute="bottom" constant="227" id="dLi-fH-8XN"/>
-                            <constraint firstItem="uUw-kb-K6R" firstAttribute="top" secondItem="1xe-9A-JBB" secondAttribute="bottom" constant="9" id="gBk-4q-lun"/>
-                            <constraint firstItem="uUw-kb-K6R" firstAttribute="bottom" secondItem="bC4-0y-KIQ" secondAttribute="bottom" id="jzP-jt-Zhg"/>
+                            <constraint firstItem="uUw-kb-K6R" firstAttribute="bottom" secondItem="bC4-0y-KIQ" secondAttribute="bottom" id="nu2-vs-GHx"/>
                             <constraint firstItem="Rh4-2Q-T0i" firstAttribute="leading" secondItem="bC4-0y-KIQ" secondAttribute="leading" constant="48" id="x5x-iG-cDp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bC4-0y-KIQ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vH4-fE-l3Y"/>
+                    <navigationItem key="navigationItem" title="Kodla" id="vH4-fE-l3Y"/>
                     <connections>
                         <outlet property="cameraView" destination="1xe-9A-JBB" id="SYf-mN-Kpe"/>
                         <outlet property="textView" destination="uUw-kb-K6R" id="H33-xG-sx8"/>
@@ -343,15 +353,108 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="snD-Rw-nhe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1699" y="88"/>
+            <point key="canvasLocation" x="1029" y="361"/>
+        </scene>
+        <!--Coding View Controller-->
+        <scene sceneID="dGR-6z-GN3">
+            <objects>
+                <viewController id="IAf-Gu-HJL" customClass="CodingViewController" customModule="kart_ON" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VLO-J1-6yD">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjh-21-vjr" customClass="RoundButton" customModule="kart_ON" customModuleProvider="target">
+                                <rect key="frame" x="769" y="326" width="67" height="67"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="97U-he-fGF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="plus" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="29"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="detectTextAction:" destination="So0-A2-RVs" eventType="touchUpInside" id="jGN-Jy-pk4"/>
+                                </connections>
+                            </button>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OX1-Lx-jHK" customClass="RoundButton" customModule="kart_ON" customModuleProvider="target">
+                                <rect key="frame" x="769" y="20" width="67" height="67"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="line.horizontal.3" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="29"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="detectTextAction:" destination="So0-A2-RVs" eventType="touchUpInside" id="jty-UZ-a1E"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Yeni bir program yapmak için + tuşuna bas" translatesAutoresizingMaskIntoConstraints="NO" id="Dd7-U6-YfB">
+                                <rect key="frame" x="82" y="338" width="514" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="514" id="eIP-6o-sQi"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwO-q1-wgg" customClass="RoundButton" customModule="kart_ON" customModuleProvider="target">
+                                <rect key="frame" x="667" y="20" width="67" height="67"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="Ug2-KT-uLQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="camera" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="29"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="detectTextAction:" destination="So0-A2-RVs" eventType="touchUpInside" id="tlF-Z3-xGd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OX1-Lx-jHK" firstAttribute="top" secondItem="BwO-q1-wgg" secondAttribute="top" id="Be2-co-nIE"/>
+                            <constraint firstItem="vjh-21-vjr" firstAttribute="trailing" secondItem="VLO-J1-6yD" secondAttribute="trailingMargin" id="Dmn-kR-371"/>
+                            <constraint firstItem="OX1-Lx-jHK" firstAttribute="leading" secondItem="BwO-q1-wgg" secondAttribute="trailing" constant="35" id="FmD-fb-3Yh"/>
+                            <constraint firstItem="aBF-ax-fxy" firstAttribute="bottom" secondItem="Dd7-U6-YfB" secondAttribute="bottom" constant="15" id="IEr-2n-z3J"/>
+                            <constraint firstItem="BwO-q1-wgg" firstAttribute="top" secondItem="aBF-ax-fxy" secondAttribute="top" constant="20" id="Sb1-S4-h9d"/>
+                            <constraint firstItem="Dd7-U6-YfB" firstAttribute="leading" secondItem="aBF-ax-fxy" secondAttribute="leading" constant="38" id="VV2-vP-sbf"/>
+                            <constraint firstItem="vjh-21-vjr" firstAttribute="bottom" secondItem="aBF-ax-fxy" secondAttribute="bottom" id="Z0b-ZY-HYW"/>
+                            <constraint firstItem="BwO-q1-wgg" firstAttribute="leading" secondItem="aBF-ax-fxy" secondAttribute="leading" constant="623" id="czq-sg-i7S"/>
+                            <constraint firstItem="OX1-Lx-jHK" firstAttribute="trailing" secondItem="vjh-21-vjr" secondAttribute="trailing" id="dH8-Hy-mWy"/>
+                            <constraint firstItem="OX1-Lx-jHK" firstAttribute="bottom" secondItem="BwO-q1-wgg" secondAttribute="bottom" id="m07-kn-TN6"/>
+                            <constraint firstItem="OX1-Lx-jHK" firstAttribute="leading" secondItem="vjh-21-vjr" secondAttribute="leading" id="nf0-e1-7Ki"/>
+                            <constraint firstItem="Dd7-U6-YfB" firstAttribute="top" secondItem="aBF-ax-fxy" secondAttribute="top" constant="338" id="nhR-rt-JLn"/>
+                            <constraint firstItem="aBF-ax-fxy" firstAttribute="bottom" secondItem="BwO-q1-wgg" secondAttribute="bottom" constant="306" id="rE8-2R-ToT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aBF-ax-fxy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FlC-XV-hTy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="294" y="361"/>
         </scene>
         <!--Kodla-->
         <scene sceneID="pw9-cz-Ruq">
             <objects>
-                <navigationController id="ASB-BV-UMt" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="ASB-BV-UMt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Kodla" image="rectangle.3.offgrid" catalog="system" id="t9c-Xh-fT0"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tgz-MO-i1X">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -365,10 +468,10 @@
         <!--Oyna-->
         <scene sceneID="jvA-Bs-EjQ">
             <objects>
-                <navigationController id="MwE-7a-naP" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" hidesBarsOnSwipe="YES" hidesBarsOnTap="YES" hidesBarsWhenVerticallyCompact="YES" id="MwE-7a-naP" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="Oyna" image="tortoise" catalog="system" id="2YL-Tr-wnM"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ezP-My-Ya0">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                 </navigationController>
@@ -379,10 +482,10 @@
         <!--Ayarlar-->
         <scene sceneID="Rjl-7A-1q6">
             <objects>
-                <navigationController id="2hd-62-eo3" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="2hd-62-eo3" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Ayarlar" image="person.circle" catalog="system" id="f0z-Pg-jMF"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="duX-1x-hQa">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                 </navigationController>
@@ -393,6 +496,8 @@
     </scenes>
     <resources>
         <image name="0" width="575" height="436"/>
+        <image name="camera" catalog="system" width="128" height="96"/>
+        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="pencil.circle" catalog="system" width="128" height="121"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>

@@ -19,6 +19,7 @@ UICollectionViewDataSource {
         return contentsDataSource.contentsArray.count
     }
     
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let item = collectionView.dequeueReusableCell(withReuseIdentifier: "ProblemCell", for: indexPath) as! HomePageCollectionViewCell
         
@@ -51,19 +52,53 @@ UICollectionViewDataSource {
         deneLayer.shadowRadius = 0.0
         deneLayer.masksToBounds = false
         
+        item.layer.cornerRadius = 10
+        item.layer.borderWidth = 1.0
+        item.layer.borderColor = UIColor.clear.cgColor
+        item.layer.masksToBounds = true
+
+
+        
+        item.problemImageView.contentMode = UIView.ContentMode.scaleAspectFill
+        item.problemImageView.layer.masksToBounds = true
+        
         
         
         return item
         
     }
-    
-    
+
     
 }
+
+extension HomePageViewController: UICollectionViewDelegateFlowLayout {
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+        let numberOfItemsPerRow:CGFloat = 2
+        let spacingBetweenCells:CGFloat = 16
+        
+        let totalSpacing = (2 * self.spacing) + ((numberOfItemsPerRow - 1) * spacingBetweenCells) // Amount of total spacing in a row
+               
+        if let collection = self.problemCollectionView {
+            let width = (collection.bounds.width - totalSpacing)/numberOfItemsPerRow
+            return CGSize(width: width, height: width / 1.5)
+               }
+        else {
+                return CGSize(width: 0, height: 0)
+               }
+    }
+      
+      
+      
+  }
 
 class HomePageViewController: UIViewController, UIApplicationDelegate {
     
      let contentsDataSource = ContentsDataSource()
+     private let spacing: CGFloat = 16.0
+
 
     @IBOutlet weak var problemCollectionView: UICollectionView!
     
@@ -122,6 +157,13 @@ class HomePageViewController: UIViewController, UIApplicationDelegate {
         
         noteButton.layer.cornerRadius = noteButton.frame.height * 0.50
         noteButton.layer.masksToBounds = true
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
+        layout.minimumLineSpacing = spacing
+        layout.minimumInteritemSpacing = spacing
+        self.problemCollectionView?.collectionViewLayout = layout
+        
         
         // Do any additional setup after loading the view.
         title = "Öğren"
