@@ -128,28 +128,7 @@ class HomePageViewController: UIViewController, UIApplicationDelegate {
         // else demo camera view
     }
     
-    
-    var window: UIWindow?
-    
-    func application(_ application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-            window = UIWindow(frame: UIScreen.main.bounds)
-            
-            // Set up of Coding Screen
-            let vc1 = TextRecognitionViewController()
-            
-            // Set up the second View Controller
-            
-            // Set up the Tab Bar Controller to have four tabs
-            let tabBarController = UITabBarController()
-            tabBarController.viewControllers = [vc1]
-            
-            // Make the Tab Bar Controller the root view controller
-            window?.rootViewController = tabBarController
-            window?.makeKeyAndVisible()
-            
-            return true
-    }
+
     
 
     override func viewDidLoad() {

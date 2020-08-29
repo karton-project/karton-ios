@@ -6,6 +6,12 @@ PODS:
     - FirebaseAnalytics (= 6.8.0)
   - Firebase/CoreOnly (6.31.0):
     - FirebaseCore (= 6.10.1)
+  - Firebase/MLVision (6.31.0):
+    - Firebase/CoreOnly
+    - FirebaseMLVision (~> 0.21.0)
+  - Firebase/MLVisionTextModel (6.31.0):
+    - Firebase/CoreOnly
+    - FirebaseMLVisionTextModel (~> 0.21.0)
   - FirebaseAnalytics (6.8.0):
     - FirebaseCore (~> 6.10)
     - FirebaseInstallations (~> 1.6)
@@ -29,6 +35,31 @@ PODS:
     - GoogleUtilities/Environment (~> 6.7)
     - GoogleUtilities/UserDefaults (~> 6.7)
     - PromisesObjC (~> 1.2)
+  - FirebaseMLCommon (0.21.0):
+    - FirebaseCore (~> 6.9)
+    - FirebaseInstallations (~> 1.5)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - GoogleUtilities/UserDefaults (~> 6.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+    - Protobuf (~> 3.12)
+  - FirebaseMLVision (0.21.0):
+    - FirebaseCore (~> 6.9)
+    - FirebaseMLCommon (~> 0.21)
+    - GoogleAPIClientForREST/Core (~> 1.3)
+    - GoogleAPIClientForREST/Vision (~> 1.3)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - GTMSessionFetcher/Core (~> 1.1)
+    - Protobuf (~> 3.12)
+  - FirebaseMLVisionTextModel (0.21.0):
+    - FirebaseMLVision (~> 0.21)
+  - GoogleAPIClientForREST/Core (1.4.3):
+    - GTMSessionFetcher (>= 1.1.7)
+  - GoogleAPIClientForREST/Vision (1.4.3):
+    - GoogleAPIClientForREST/Core
+    - GTMSessionFetcher (>= 1.1.7)
   - GoogleAppMeasurement (6.8.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
     - GoogleUtilities/MethodSwizzler (~> 6.7)
@@ -39,9 +70,6 @@ PODS:
     - nanopb (~> 1.30906.0)
   - GoogleMLKit/MLKitCore (0.63.0):
     - MLKitCommon (~> 0.63.0)
-  - GoogleMLKit/PoseDetection (0.63.0):
-    - GoogleMLKit/MLKitCore
-    - MLKitPoseDetection (~> 0.63.0)
   - GoogleMLKit/TextRecognition (0.63.0):
     - GoogleMLKit/MLKitCore
     - MLKitTextRecognition (~> 0.63.0)
@@ -78,7 +106,11 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilitiesComponents (1.0.0):
     - GoogleUtilities/Logger
+  - GTMSessionFetcher (1.4.0):
+    - GTMSessionFetcher/Full (= 1.4.0)
   - GTMSessionFetcher/Core (1.4.0)
+  - GTMSessionFetcher/Full (1.4.0):
+    - GTMSessionFetcher/Core (= 1.4.0)
   - MLKitCommon (0.63.0):
     - GoogleDataTransport (~> 7.0)
     - GoogleToolboxForMac/Logger (~> 2.1)
@@ -88,9 +120,6 @@ PODS:
     - GoogleUtilitiesComponents (~> 1.0)
     - GTMSessionFetcher/Core (~> 1.1)
     - Protobuf (~> 3.12)
-  - MLKitPoseDetection (0.63.0):
-    - MLKitCommon (~> 0.63)
-    - MLKitXenoCommon (~> 0.63)
   - MLKitTextRecognition (0.63.0):
     - MLKitCommon (~> 0.63)
     - MLKitVision (~> 0.63)
@@ -100,9 +129,6 @@ PODS:
     - GTMSessionFetcher/Core (~> 1.1)
     - MLKitCommon (~> 0.63)
     - Protobuf (~> 3.12)
-  - MLKitXenoCommon (0.63.0):
-    - MLKitCommon (~> 0.63)
-    - MLKitVision (~> 0.63)
   - nanopb (1.30906.0):
     - nanopb/decode (= 1.30906.0)
     - nanopb/encode (= 1.30906.0)
@@ -113,7 +139,8 @@ PODS:
 
 DEPENDENCIES:
   - Firebase/Analytics
-  - GoogleMLKit/PoseDetection
+  - Firebase/MLVision (= 6.31.0)
+  - Firebase/MLVisionTextModel (= 6.31.0)
   - GoogleMLKit/TextRecognition
 
 SPEC REPOS:
@@ -123,6 +150,10 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseCoreDiagnostics
     - FirebaseInstallations
+    - FirebaseMLCommon
+    - FirebaseMLVision
+    - FirebaseMLVisionTextModel
+    - GoogleAPIClientForREST
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleMLKit
@@ -131,10 +162,8 @@ SPEC REPOS:
     - GoogleUtilitiesComponents
     - GTMSessionFetcher
     - MLKitCommon
-    - MLKitPoseDetection
     - MLKitTextRecognition
     - MLKitVision
-    - MLKitXenoCommon
     - nanopb
     - PromisesObjC
     - Protobuf
@@ -145,6 +174,10 @@ SPEC CHECKSUMS:
   FirebaseCore: 6fb954e350af0885803d5aa49865d15d9a6b264c
   FirebaseCoreDiagnostics: 7415bfb3883b3500c5a95c42b6ba66baae78f600
   FirebaseInstallations: 466c7b4d1f58fe16707693091da253726a731ed2
+  FirebaseMLCommon: d218d75dd1c6c4e447f731ac22da56b88cb79431
+  FirebaseMLVision: 68dd092b4c52a7ac163ec0d4f541d5711fc9fec6
+  FirebaseMLVisionTextModel: e9f3cba0f31022ae9dd3d246aff9849075cacd98
+  GoogleAPIClientForREST: e2d95a611ac06a90d143c93bfd8597719f8b0938
   GoogleAppMeasurement: ecc30d0ab5b66d7d18e85ce1b8e2b345db60626d
   GoogleDataTransport: e85fb700c9b027079ce182c3d08e12e0f9618bb4
   GoogleMLKit: 99fc8402693f034ecea567485af4de2bbb3ca108
@@ -153,14 +186,12 @@ SPEC CHECKSUMS:
   GoogleUtilitiesComponents: a69c0b3b369ba443e988141e75ef49d9010b1c80
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
   MLKitCommon: fc574613b15b3c61056f1f2c2277397bf8e1eeda
-  MLKitPoseDetection: 3511e9d7f8cd7edb7b4ae9fabf02c3f5a0565a78
   MLKitTextRecognition: f63196c0836420144ac5a3cdc20635779e698628
   MLKitVision: e5c375d316ffe7f08bf9be06126002a156318d90
-  MLKitXenoCommon: 1c0867797401244cf4fdb32df35b5d5759762102
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
   Protobuf: 3dac39b34a08151c6d949560efe3f86134a3f748
 
-PODFILE CHECKSUM: d79e228a45c061d903acd0387362c0efe38cab38
+PODFILE CHECKSUM: 2880f035a26c3cf2b3b9b4f77a23595a287a1456
 
 COCOAPODS: 1.9.3
