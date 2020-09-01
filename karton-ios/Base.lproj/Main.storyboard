@@ -31,7 +31,7 @@
         <!--Öğren-->
         <scene sceneID="i6T-al-nji">
             <objects>
-                <navigationController modalTransitionStyle="flipHorizontal" hidesBarsWhenVerticallyCompact="YES" id="sol-Qo-cno" sceneMemberID="viewController">
+                <navigationController modalTransitionStyle="flipHorizontal" hidesBarsOnSwipe="YES" hidesBarsWhenVerticallyCompact="YES" id="sol-Qo-cno" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Öğren" image="pencil.circle" catalog="system" landscapeImage="pencil.circle" id="YPi-dA-BlW"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Ms-Vl-bR8">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
@@ -178,10 +178,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="3DV-fP-4Qg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="225" id="3Eg-1B-szT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3DV-fP-4Qg" secondAttribute="bottom" constant="16" id="bXt-oz-fDc"/>
-                            <constraint firstItem="3DV-fP-4Qg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="732" id="k2w-aZ-CL5"/>
-                            <constraint firstItem="3DV-fP-4Qg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="pfB-Ks-mBn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3DV-fP-4Qg" secondAttribute="bottom" constant="16" id="9iG-tM-oVS"/>
+                            <constraint firstItem="3DV-fP-4Qg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="RPv-Yb-QJW"/>
+                            <constraint firstItem="3DV-fP-4Qg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="732" id="lzD-NM-XPX"/>
+                            <constraint firstItem="3DV-fP-4Qg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="225" id="yAY-6X-Acz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -329,11 +329,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OX1-Lx-jHK" customClass="RoundButton" customModule="kart_ON" customModuleProvider="target">
+                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OX1-Lx-jHK" customClass="RoundButton" customModule="kart_ON" customModuleProvider="target">
                                 <rect key="frame" x="769" y="20" width="67" height="67"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="67" id="UFV-l8-eCC"/>
+                                    <constraint firstAttribute="height" constant="67" id="FgP-15-5io"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="tintColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -347,21 +347,21 @@
                                     <action selector="detectTextAction:" destination="So0-A2-RVs" eventType="touchUpInside" id="jty-UZ-a1E"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Yeni bir program yapmak için + tuşuna bas" translatesAutoresizingMaskIntoConstraints="NO" id="Dd7-U6-YfB">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Yeni bir program yapmak için + tuşuna bas" translatesAutoresizingMaskIntoConstraints="NO" id="Dd7-U6-YfB">
                                 <rect key="frame" x="85" y="286" width="514" height="40"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="514" id="mjr-VP-sVV"/>
+                                    <constraint firstAttribute="width" constant="514" id="FCY-Ut-Py5"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwO-q1-wgg" customClass="RoundButton" customModule="kart_ON" customModuleProvider="target">
+                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwO-q1-wgg" customClass="RoundButton" customModule="kart_ON" customModuleProvider="target">
                                 <rect key="frame" x="667" y="20" width="67" height="67"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="67" id="Ug2-KT-uLQ"/>
+                                    <constraint firstAttribute="width" constant="67" id="hlv-5I-sbX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="tintColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -375,11 +375,11 @@
                                     <action selector="detectTextAction:" destination="So0-A2-RVs" eventType="touchUpInside" id="tlF-Z3-xGd"/>
                                 </connections>
                             </button>
-                            <button clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjh-21-vjr" customClass="RoundButton" customModule="kart_ON" customModuleProvider="target">
+                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjh-21-vjr" customClass="RoundButton" customModule="kart_ON" customModuleProvider="target">
                                 <rect key="frame" x="769" y="259" width="67" height="67"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="67" id="Rgu-A6-FC2"/>
+                                    <constraint firstAttribute="height" constant="67" id="dqG-x7-JPb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="tintColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -397,20 +397,18 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="vjh-21-vjr" firstAttribute="trailing" secondItem="VLO-J1-6yD" secondAttribute="trailingMargin" id="5YQ-dU-P5A"/>
-                            <constraint firstItem="Dd7-U6-YfB" firstAttribute="leading" secondItem="aBF-ax-fxy" secondAttribute="leading" constant="41" id="60y-Ub-PKc"/>
-                            <constraint firstItem="OX1-Lx-jHK" firstAttribute="top" secondItem="BwO-q1-wgg" secondAttribute="top" id="79L-I3-njy"/>
-                            <constraint firstItem="OX1-Lx-jHK" firstAttribute="trailing" secondItem="vjh-21-vjr" secondAttribute="trailing" id="IDk-hc-bUB"/>
-                            <constraint firstItem="OX1-Lx-jHK" firstAttribute="bottom" secondItem="BwO-q1-wgg" secondAttribute="bottom" id="OPP-kc-X4N"/>
-                            <constraint firstItem="BwO-q1-wgg" firstAttribute="top" secondItem="aBF-ax-fxy" secondAttribute="top" constant="20" id="Sb1-S4-h9d"/>
-                            <constraint firstItem="OX1-Lx-jHK" firstAttribute="leading" secondItem="BwO-q1-wgg" secondAttribute="trailing" constant="35" id="WmK-XH-0K5"/>
-                            <constraint firstItem="OX1-Lx-jHK" firstAttribute="leading" secondItem="vjh-21-vjr" secondAttribute="leading" id="aru-YV-yuk"/>
-                            <constraint firstItem="BwO-q1-wgg" firstAttribute="leading" secondItem="aBF-ax-fxy" secondAttribute="leading" constant="623" id="czq-sg-i7S"/>
-                            <constraint firstItem="Dd7-U6-YfB" firstAttribute="top" secondItem="aBF-ax-fxy" secondAttribute="top" constant="286" id="l3K-bs-2lm"/>
-                            <constraint firstItem="aBF-ax-fxy" firstAttribute="bottom" secondItem="vjh-21-vjr" secondAttribute="bottom" constant="18" id="lcB-44-Cgu"/>
-                            <constraint firstItem="aBF-ax-fxy" firstAttribute="bottom" secondItem="BwO-q1-wgg" secondAttribute="bottom" constant="306" id="rE8-2R-ToT"/>
-                            <constraint firstItem="vjh-21-vjr" firstAttribute="top" secondItem="VLO-J1-6yD" secondAttribute="top" constant="259" id="w1T-3n-uQX"/>
-                            <constraint firstItem="Dd7-U6-YfB" firstAttribute="bottom" secondItem="vjh-21-vjr" secondAttribute="bottom" id="yfm-n7-fPp"/>
+                            <constraint firstItem="BwO-q1-wgg" firstAttribute="leading" secondItem="aBF-ax-fxy" secondAttribute="leading" constant="623" id="7li-U4-WUC"/>
+                            <constraint firstItem="OX1-Lx-jHK" firstAttribute="leading" secondItem="BwO-q1-wgg" secondAttribute="trailing" constant="35" id="HvX-8i-YCz"/>
+                            <constraint firstItem="BwO-q1-wgg" firstAttribute="bottom" secondItem="OX1-Lx-jHK" secondAttribute="bottom" id="J0A-Pl-lOd"/>
+                            <constraint firstItem="BwO-q1-wgg" firstAttribute="top" secondItem="aBF-ax-fxy" secondAttribute="top" constant="20" id="LZ1-ij-tHy"/>
+                            <constraint firstItem="BwO-q1-wgg" firstAttribute="top" secondItem="OX1-Lx-jHK" secondAttribute="top" id="SNv-Ym-WUh"/>
+                            <constraint firstItem="vjh-21-vjr" firstAttribute="leading" secondItem="OX1-Lx-jHK" secondAttribute="leading" id="SdL-X3-cZo"/>
+                            <constraint firstItem="Dd7-U6-YfB" firstAttribute="leading" secondItem="aBF-ax-fxy" secondAttribute="leading" constant="41" id="ZGI-1D-l3H"/>
+                            <constraint firstItem="vjh-21-vjr" firstAttribute="trailing" secondItem="VLO-J1-6yD" secondAttribute="trailingMargin" id="aih-Vs-xp1"/>
+                            <constraint firstItem="Dd7-U6-YfB" firstAttribute="top" secondItem="aBF-ax-fxy" secondAttribute="top" constant="286" id="dIX-ON-6cc"/>
+                            <constraint firstItem="vjh-21-vjr" firstAttribute="trailing" secondItem="OX1-Lx-jHK" secondAttribute="trailing" id="e54-Xz-KNv"/>
+                            <constraint firstItem="aBF-ax-fxy" firstAttribute="bottom" secondItem="vjh-21-vjr" secondAttribute="bottom" constant="18" id="wnn-YJ-rba"/>
+                            <constraint firstItem="Dd7-U6-YfB" firstAttribute="bottom" secondItem="vjh-21-vjr" secondAttribute="bottom" id="xzW-Cp-es8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aBF-ax-fxy"/>
                     </view>

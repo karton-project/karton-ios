@@ -12,6 +12,7 @@ import UIKit
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.frame.size = CGSize(width: 60,height: 60)
         sharedInit()
     }
 
