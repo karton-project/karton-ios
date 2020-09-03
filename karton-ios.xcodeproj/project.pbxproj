@@ -68,7 +68,7 @@
 		D44DFD1324F2D931008B210F /* 2nd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2nd.jpg; sourceTree = "<group>"; };
 		D44DFD1524F2DB4A008B210F /* UIUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtilities.swift; sourceTree = "<group>"; };
 		D47EC55324F840E5003AC8D9 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		D48EE305249ADB2200F1C598 /* kart-ON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kart-ON.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48EE305249ADB2200F1C598 /* Kart-ON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kart-ON.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48EE308249ADB2200F1C598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D48EE30A249ADB2200F1C598 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D48EE30F249ADB2200F1C598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 		D48EE306249ADB2200F1C598 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D48EE305249ADB2200F1C598 /* kart-ON.app */,
+				D48EE305249ADB2200F1C598 /* Kart-ON.app */,
 				D48EE31B249ADB2400F1C598 /* karton-iosTests.xctest */,
 				D48EE326249ADB2400F1C598 /* karton-iosUITests.xctest */,
 			);
@@ -267,7 +267,7 @@
 			);
 			name = "karton-ios";
 			productName = "karton-ios";
-			productReference = D48EE305249ADB2200F1C598 /* kart-ON.app */;
+			productReference = D48EE305249ADB2200F1C598 /* Kart-ON.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D48EE31A249ADB2400F1C598 /* karton-iosTests */ = {
@@ -719,7 +719,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ece.karton-ios";
-				PRODUCT_NAME = "kart-ON";
+				PRODUCT_NAME = "Kart-ON";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -738,7 +738,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ece.karton-ios";
-				PRODUCT_NAME = "kart-ON";
+				PRODUCT_NAME = "Kart-ON";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
