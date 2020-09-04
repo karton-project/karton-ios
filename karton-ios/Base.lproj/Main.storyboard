@@ -12,7 +12,7 @@
         <!--Main View Controller-->
         <scene sceneID="8Om-KR-04d">
             <objects>
-                <viewController id="N5E-Bh-kSA" customClass="MainViewController" customModule="kart_ON" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="N5E-Bh-kSA" customClass="MainViewController" customModule="Kart_ON" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LjY-ks-PAS">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,7 +109,8 @@
         <scene sceneID="9FQ-KT-s4j">
             <objects>
                 <navigationController id="nfA-pz-fjs" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b0f-sf-mvT">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="b0f-sf-mvT">
                         <rect key="frame" x="0.0" y="0.0" width="800" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -140,7 +141,7 @@
         <!--Ana Menü-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomePageViewController" customModule="kart_ON" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomePageViewController" customModule="Kart_ON" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="800" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,7 +157,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProblemCell" id="pkD-8Q-eCd" customClass="HomePageCollectionViewCell" customModule="kart_ON" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProblemCell" id="pkD-8Q-eCd" customClass="HomePageCollectionViewCell" customModule="Kart_ON" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="30.5" width="372" height="288"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Tqf-wc-BTc">
@@ -252,7 +253,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="gwG-rw-cDw"/>
                                 </connections>
                             </collectionView>
-                            <button clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DV-fP-4Qg" customClass="RoundButton" customModule="kart_ON" customModuleProvider="target">
+                            <button clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DV-fP-4Qg" customClass="RoundButton" customModule="Kart_ON" customModuleProvider="target">
                                 <rect key="frame" x="716" y="317" width="60" height="60"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -288,7 +289,7 @@
         <!--Web Kit View Controller-->
         <scene sceneID="t5c-CO-72e">
             <objects>
-                <viewController id="Nf7-af-MSN" customClass="WebKitViewController" customModule="kart_ON" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Nf7-af-MSN" customClass="WebKitViewController" customModule="Kart_ON" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qcn-rd-tBU">
                         <rect key="frame" x="0.0" y="0.0" width="800" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -323,19 +324,20 @@
         <!--Camera View Controller-->
         <scene sceneID="NYe-zK-gmh">
             <objects>
-                <viewController id="So0-A2-RVs" customClass="CameraViewController" customModule="kart_ON" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="So0-A2-RVs" customClass="CameraViewController" customModule="Kart_ON" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O8p-x3-raF">
-                        <rect key="frame" x="0.0" y="0.0" width="800" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="370"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1xe-9A-JBB">
-                                <rect key="frame" x="107" y="44" width="673" height="193"/>
+                                <rect key="frame" x="64" y="0.0" width="736" height="193"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uUw-kb-K6R">
-                                <rect key="frame" x="577" y="297" width="203" height="96"/>
+                                <rect key="frame" x="585" y="170" width="203" height="111"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="203" id="Fk4-t2-HxO"/>
+                                    <constraint firstAttribute="height" constant="111" id="W6F-az-Nnp"/>
                                 </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -344,12 +346,12 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </variation>
                             </textView>
-                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rh4-2Q-T0i" customClass="RoundButton" customModule="kart_ON" customModuleProvider="target">
-                                <rect key="frame" x="44" y="315" width="56" height="60"/>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rh4-2Q-T0i" customClass="RoundButton" customModule="Kart_ON" customModuleProvider="target">
+                                <rect key="frame" x="698" y="289" width="60" height="60"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="9QE-wa-r9l"/>
+                                    <constraint firstAttribute="width" constant="60" id="YGd-qP-2Xe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="tintColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -363,40 +365,42 @@
                                     <action selector="detectTextAction:" destination="So0-A2-RVs" eventType="touchUpInside" id="s7M-YK-TmV"/>
                                 </connections>
                             </button>
-                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ttm-g3-Xyj" customClass="RoundButton" customModule="kart_ON" customModuleProvider="target">
-                                <rect key="frame" x="44" y="64" width="56" height="60"/>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4K0-m9-JM9" customClass="RoundButton" customModule="Kart_ON" customModuleProvider="target">
+                                <rect key="frame" x="64" y="289" width="60" height="60"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="AoU-bo-2IQ"/>
+                                    <constraint firstAttribute="width" constant="60" id="WEK-bl-ls9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="tintColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="arrow.left" catalog="system"/>
+                                <state key="normal" image="plus" catalog="system"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="29"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="detectTextAction:" destination="So0-A2-RVs" eventType="touchUpInside" id="TKm-zM-7yV"/>
+                                    <action selector="detectTextAction:" destination="So0-A2-RVs" eventType="touchUpInside" id="MWl-5D-uMf"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="uUw-kb-K6R" firstAttribute="bottom" secondItem="bC4-0y-KIQ" secondAttribute="bottom" id="3M9-uo-vGV"/>
-                            <constraint firstItem="Rh4-2Q-T0i" firstAttribute="leading" secondItem="Ttm-g3-Xyj" secondAttribute="leading" id="7u8-h7-ymq"/>
-                            <constraint firstItem="1xe-9A-JBB" firstAttribute="leading" secondItem="O8p-x3-raF" secondAttribute="leading" constant="107" id="BW5-wc-JiI"/>
-                            <constraint firstItem="bC4-0y-KIQ" firstAttribute="bottom" secondItem="Rh4-2Q-T0i" secondAttribute="bottom" constant="18" id="CDy-77-Qtt"/>
-                            <constraint firstItem="uUw-kb-K6R" firstAttribute="centerY" secondItem="Rh4-2Q-T0i" secondAttribute="centerY" id="KBB-iP-8jH"/>
-                            <constraint firstItem="1xe-9A-JBB" firstAttribute="top" secondItem="bC4-0y-KIQ" secondAttribute="top" id="PNg-6b-HQ1"/>
-                            <constraint firstItem="Ttm-g3-Xyj" firstAttribute="top" secondItem="bC4-0y-KIQ" secondAttribute="top" constant="20" id="QLd-cK-f22"/>
-                            <constraint firstItem="Rh4-2Q-T0i" firstAttribute="trailing" secondItem="Ttm-g3-Xyj" secondAttribute="trailing" id="Rlg-OF-37j"/>
-                            <constraint firstAttribute="bottom" secondItem="1xe-9A-JBB" secondAttribute="bottom" constant="177" id="VfE-vX-9u1"/>
-                            <constraint firstItem="uUw-kb-K6R" firstAttribute="trailing" secondItem="1xe-9A-JBB" secondAttribute="trailing" id="eJa-gN-rTN"/>
-                            <constraint firstItem="Rh4-2Q-T0i" firstAttribute="leading" secondItem="O8p-x3-raF" secondAttribute="leadingMargin" constant="-20" id="eOF-AJ-ZJL"/>
-                            <constraint firstItem="1xe-9A-JBB" firstAttribute="trailing" secondItem="O8p-x3-raF" secondAttribute="trailingMargin" id="mWj-oR-DvY"/>
-                            <constraint firstItem="1xe-9A-JBB" firstAttribute="leading" secondItem="Ttm-g3-Xyj" secondAttribute="trailing" constant="7" id="uCH-L4-i1m"/>
+                            <constraint firstItem="uUw-kb-K6R" firstAttribute="leading" secondItem="bC4-0y-KIQ" secondAttribute="leading" constant="541" id="69b-D7-e4z"/>
+                            <constraint firstItem="4K0-m9-JM9" firstAttribute="leading" secondItem="O8p-x3-raF" secondAttribute="leadingMargin" id="7pg-ol-Qpx"/>
+                            <constraint firstItem="uUw-kb-K6R" firstAttribute="top" secondItem="bC4-0y-KIQ" secondAttribute="top" constant="170" id="DQ4-pP-Bzx"/>
+                            <constraint firstItem="Rh4-2Q-T0i" firstAttribute="top" secondItem="1xe-9A-JBB" secondAttribute="bottom" constant="96" id="HTk-9a-c1z"/>
+                            <constraint firstItem="1xe-9A-JBB" firstAttribute="leading" secondItem="bC4-0y-KIQ" secondAttribute="leading" constant="20" id="KKf-WM-b4B"/>
+                            <constraint firstItem="Rh4-2Q-T0i" firstAttribute="top" secondItem="bC4-0y-KIQ" secondAttribute="top" constant="289" id="QJh-2A-ang"/>
+                            <constraint firstItem="4K0-m9-JM9" firstAttribute="top" secondItem="Rh4-2Q-T0i" secondAttribute="top" id="QrL-QH-MSA"/>
+                            <constraint firstItem="4K0-m9-JM9" firstAttribute="baseline" secondItem="Rh4-2Q-T0i" secondAttribute="baseline" id="R7m-Vk-rZD"/>
+                            <constraint firstItem="1xe-9A-JBB" firstAttribute="top" secondItem="bC4-0y-KIQ" secondAttribute="top" id="gaz-LW-JrA"/>
+                            <constraint firstItem="bC4-0y-KIQ" firstAttribute="bottom" secondItem="Rh4-2Q-T0i" secondAttribute="bottom" id="lX4-XS-OzU"/>
+                            <constraint firstItem="bC4-0y-KIQ" firstAttribute="trailing" secondItem="uUw-kb-K6R" secondAttribute="trailing" constant="12" id="oca-qr-0cD"/>
+                            <constraint firstItem="Rh4-2Q-T0i" firstAttribute="leading" secondItem="bC4-0y-KIQ" secondAttribute="leading" constant="654" id="qIh-jz-bKZ"/>
+                            <constraint firstItem="1xe-9A-JBB" firstAttribute="trailing" secondItem="O8p-x3-raF" secondAttribute="trailingMargin" constant="20" id="tFb-Db-heQ"/>
+                            <constraint firstItem="Rh4-2Q-T0i" firstAttribute="top" secondItem="uUw-kb-K6R" secondAttribute="bottom" constant="8" id="tlc-Yd-Ucb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bC4-0y-KIQ"/>
                     </view>
@@ -410,28 +414,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="snD-Rw-nhe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1032" y="5199"/>
+            <point key="canvasLocation" x="1031.9196428571429" y="5198.5507246376819"/>
         </scene>
         <!--Kodla-->
         <scene sceneID="dGR-6z-GN3">
             <objects>
-                <viewController id="IAf-Gu-HJL" customClass="CodingViewController" customModule="kart_ON" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IAf-Gu-HJL" customClass="CodingViewController" customModule="Kart_ON" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VLO-J1-6yD">
-                        <rect key="frame" x="0.0" y="0.0" width="800" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="370"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Yeni bir program yapmak için + tuşuna bas" translatesAutoresizingMaskIntoConstraints="NO" id="Dd7-U6-YfB">
-                                <rect key="frame" x="32" y="332" width="514" height="43"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="514" id="PRl-YZ-A9t"/>
-                                </constraints>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjh-21-vjr" customClass="RoundButton" customModule="kart_ON" customModuleProvider="target">
-                                <rect key="frame" x="720" y="315" width="60" height="60"/>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjh-21-vjr" customClass="RoundButton" customModule="Kart_ON" customModuleProvider="target">
+                                <rect key="frame" x="720" y="271" width="60" height="60"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="WQK-Zi-tIc"/>
@@ -449,8 +443,8 @@
                                     <segue destination="So0-A2-RVs" kind="show" id="kfe-Qh-Cry"/>
                                 </connections>
                             </button>
-                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwO-q1-wgg" customClass="RoundButton" customModule="kart_ON" customModuleProvider="target">
-                                <rect key="frame" x="623" y="64" width="60" height="60"/>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwO-q1-wgg" customClass="RoundButton" customModule="Kart_ON" customModuleProvider="target">
+                                <rect key="frame" x="623" y="20" width="60" height="60"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="hlv-5I-sbX"/>
@@ -467,8 +461,8 @@
                                     <action selector="detectTextAction:" destination="So0-A2-RVs" eventType="touchUpInside" id="tlF-Z3-xGd"/>
                                 </connections>
                             </button>
-                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OX1-Lx-jHK" customClass="RoundButton" customModule="kart_ON" customModuleProvider="target">
-                                <rect key="frame" x="720" y="64" width="60" height="60"/>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OX1-Lx-jHK" customClass="RoundButton" customModule="Kart_ON" customModuleProvider="target">
+                                <rect key="frame" x="720" y="20" width="60" height="60"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="FgP-15-5io"/>
@@ -485,6 +479,16 @@
                                     <action selector="detectTextAction:" destination="So0-A2-RVs" eventType="touchUpInside" id="jty-UZ-a1E"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Yeni bir program yapmak için + tuşuna bas" translatesAutoresizingMaskIntoConstraints="NO" id="Dd7-U6-YfB">
+                                <rect key="frame" x="221" y="288" width="358" height="43"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="358" id="PRl-YZ-A9t"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -499,7 +503,7 @@
                             <constraint firstItem="vjh-21-vjr" firstAttribute="trailing" secondItem="OX1-Lx-jHK" secondAttribute="trailing" id="P3N-IP-nAH"/>
                             <constraint firstItem="BwO-q1-wgg" firstAttribute="top" secondItem="OX1-Lx-jHK" secondAttribute="top" id="SNv-Ym-WUh"/>
                             <constraint firstItem="Dd7-U6-YfB" firstAttribute="bottom" secondItem="vjh-21-vjr" secondAttribute="bottom" id="TmG-WX-LBR"/>
-                            <constraint firstItem="Dd7-U6-YfB" firstAttribute="leading" secondItem="VLO-J1-6yD" secondAttribute="leadingMargin" constant="-32" id="XI8-cV-qKx"/>
+                            <constraint firstItem="Dd7-U6-YfB" firstAttribute="leading" secondItem="VLO-J1-6yD" secondAttribute="leadingMargin" constant="157" id="XI8-cV-qKx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aBF-ax-fxy"/>
                     </view>
@@ -507,7 +511,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FlC-XV-hTy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1032" y="4238"/>
+            <point key="canvasLocation" x="1031.9196428571429" y="4237.68115942029"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IYp-jo-7Xd">
@@ -530,7 +534,6 @@
     </scenes>
     <resources>
         <image name="0" width="575" height="436"/>
-        <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="camera" catalog="system" width="128" height="96"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
