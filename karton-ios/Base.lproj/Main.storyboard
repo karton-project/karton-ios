@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uvh-Gg-Kkb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uvh-Gg-Kkb">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17504.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -50,7 +51,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rru-v0-hFh">
-                                <rect key="frame" x="11" y="194" width="137" height="54"/>
+                                <rect key="frame" x="11" y="194" width="142" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="IXz-tr-XgL"/>
                                 </constraints>
@@ -76,10 +77,11 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="e0K-AN-hYX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="e0K-AN-hYX" firstAttribute="trailing" secondItem="Rru-v0-hFh" secondAttribute="trailing" constant="704" id="A9r-EJ-kiF"/>
-                            <constraint firstItem="Rru-v0-hFh" firstAttribute="centerX" secondItem="nSF-ct-Kje" secondAttribute="centerX" id="FZf-4i-zdx"/>
+                            <constraint firstItem="e0K-AN-hYX" firstAttribute="trailing" secondItem="Rru-v0-hFh" secondAttribute="trailing" constant="699" id="A9r-EJ-kiF"/>
+                            <constraint firstItem="Rru-v0-hFh" firstAttribute="centerX" secondItem="nSF-ct-Kje" secondAttribute="centerX" constant="2.5" id="FZf-4i-zdx"/>
                             <constraint firstItem="UUN-ru-Ny9" firstAttribute="top" secondItem="e0K-AN-hYX" secondAttribute="top" constant="20" id="LMy-sm-XWi"/>
                             <constraint firstItem="Rru-v0-hFh" firstAttribute="top" secondItem="LjY-ks-PAS" secondAttribute="top" constant="194" id="MJh-M4-TAE"/>
                             <constraint firstItem="e0K-AN-hYX" firstAttribute="bottom" secondItem="F06-BY-VvH" secondAttribute="bottom" constant="51" id="NXB-Y0-IgJ"/>
@@ -93,7 +95,6 @@
                             <constraint firstItem="nSF-ct-Kje" firstAttribute="top" secondItem="UUN-ru-Ny9" secondAttribute="bottom" constant="26" id="m0b-Hx-E1V"/>
                             <constraint firstItem="F06-BY-VvH" firstAttribute="leading" secondItem="nSF-ct-Kje" secondAttribute="leading" id="sKL-a9-cs1"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="e0K-AN-hYX"/>
                     </view>
                     <navigationItem key="navigationItem" id="gGb-wB-0di"/>
                     <connections>
@@ -149,7 +150,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="y6Y-rq-eyV">
                                 <rect key="frame" x="0.0" y="0.0" width="800" height="414"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ejp-kQ-Mdc">
                                     <size key="itemSize" width="372" height="288"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -176,7 +177,7 @@
                                                     <color key="textColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQ9-rt-xx2">
+                                                <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQ9-rt-xx2">
                                                     <rect key="frame" x="18" y="206" width="130" height="48"/>
                                                     <color key="backgroundColor" red="0.28716238230000002" green="0.36521298749999997" blue="0.67266076799999996" alpha="0.93019584764109597" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -190,7 +191,7 @@
                                                         <action selector="learnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fgd-LA-bYT"/>
                                                     </connections>
                                                 </button>
-                                                <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMh-SY-nEJ">
+                                                <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMh-SY-nEJ">
                                                     <rect key="frame" x="204" y="206" width="130" height="48"/>
                                                     <color key="backgroundColor" red="0.28716238232061336" green="0.36521298750869535" blue="0.67266076799999996" alpha="0.93000000000000005" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" title="DENE">
@@ -201,7 +202,7 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xa4-Xc-eIQ">
-                                                    <rect key="frame" x="18" y="74" width="86" height="98.5"/>
+                                                    <rect key="frame" x="18" y="74" width="85.5" height="98.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="1Tl-LC-jnE"/>
                                                         <constraint firstAttribute="height" constant="98.5" id="5wS-uP-Dvc"/>
@@ -255,7 +256,7 @@
                             </collectionView>
                             <button clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DV-fP-4Qg" customClass="RoundButton" customModule="Kart_ON" customModuleProvider="target">
                                 <rect key="frame" x="716" y="317" width="60" height="60"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="tintColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="pencil" catalog="system"/>
@@ -266,14 +267,14 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="3DV-fP-4Qg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="317" id="4dg-dx-6Lv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3DV-fP-4Qg" secondAttribute="trailing" constant="24" id="DRT-HQ-MHF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3DV-fP-4Qg" secondAttribute="bottom" constant="16" id="krD-Dm-sCN"/>
                             <constraint firstItem="3DV-fP-4Qg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="672" id="oh4-5Y-KPP"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Ana Menü" id="z5I-vQ-X1a"/>
                     <connections>
@@ -303,14 +304,14 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="cbu-eI-Tp9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dSI-7U-LIf" firstAttribute="top" secondItem="cbu-eI-Tp9" secondAttribute="top" constant="33" id="9kj-il-TAZ"/>
                             <constraint firstItem="dSI-7U-LIf" firstAttribute="leading" secondItem="Qcn-rd-tBU" secondAttribute="leadingMargin" id="GXB-GJ-5sk"/>
                             <constraint firstItem="cbu-eI-Tp9" firstAttribute="bottom" secondItem="dSI-7U-LIf" secondAttribute="bottom" constant="57" id="L3P-Fe-Yqv"/>
                             <constraint firstItem="dSI-7U-LIf" firstAttribute="trailing" secondItem="Qcn-rd-tBU" secondAttribute="trailingMargin" id="OgQ-AL-WtQ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="cbu-eI-Tp9"/>
                     </view>
                     <navigationItem key="navigationItem" id="5rL-2b-bMK"/>
                     <connections>
@@ -348,7 +349,7 @@
                             </textView>
                             <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rh4-2Q-T0i" customClass="RoundButton" customModule="Kart_ON" customModuleProvider="target">
                                 <rect key="frame" x="698" y="289" width="60" height="60"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="YGd-qP-2Xe"/>
@@ -367,14 +368,14 @@
                             </button>
                             <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4K0-m9-JM9" customClass="RoundButton" customModule="Kart_ON" customModuleProvider="target">
                                 <rect key="frame" x="64" y="289" width="60" height="60"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="WEK-bl-ls9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="tintColor" red="0.95836703940000001" green="0.94631536019999996" blue="0.91462173349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="plus" catalog="system"/>
+                                <state key="normal" image="checkmark" catalog="system"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="29"/>
@@ -385,6 +386,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="bC4-0y-KIQ"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="uUw-kb-K6R" firstAttribute="leading" secondItem="bC4-0y-KIQ" secondAttribute="leading" constant="541" id="69b-D7-e4z"/>
@@ -402,7 +404,6 @@
                             <constraint firstItem="1xe-9A-JBB" firstAttribute="trailing" secondItem="O8p-x3-raF" secondAttribute="trailingMargin" constant="20" id="tFb-Db-heQ"/>
                             <constraint firstItem="Rh4-2Q-T0i" firstAttribute="top" secondItem="uUw-kb-K6R" secondAttribute="bottom" constant="8" id="tlc-Yd-Ucb"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="bC4-0y-KIQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="vH4-fE-l3Y">
                         <barButtonItem key="backBarButtonItem" title="Geri" id="sSy-xT-Uje"/>
@@ -426,7 +427,7 @@
                         <subviews>
                             <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjh-21-vjr" customClass="RoundButton" customModule="Kart_ON" customModuleProvider="target">
                                 <rect key="frame" x="720" y="271" width="60" height="60"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="WQK-Zi-tIc"/>
                                 </constraints>
@@ -445,7 +446,7 @@
                             </button>
                             <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwO-q1-wgg" customClass="RoundButton" customModule="Kart_ON" customModuleProvider="target">
                                 <rect key="frame" x="623" y="20" width="60" height="60"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="hlv-5I-sbX"/>
                                 </constraints>
@@ -463,7 +464,7 @@
                             </button>
                             <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OX1-Lx-jHK" customClass="RoundButton" customModule="Kart_ON" customModuleProvider="target">
                                 <rect key="frame" x="720" y="20" width="60" height="60"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="FgP-15-5io"/>
                                 </constraints>
@@ -477,20 +478,22 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="detectTextAction:" destination="So0-A2-RVs" eventType="touchUpInside" id="jty-UZ-a1E"/>
+                                    <segue destination="z14-Zy-pSL" kind="show" id="i9C-NV-UIB"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Yeni bir program yapmak için + tuşuna bas" translatesAutoresizingMaskIntoConstraints="NO" id="Dd7-U6-YfB">
                                 <rect key="frame" x="221" y="288" width="358" height="43"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="358" id="PRl-YZ-A9t"/>
                                 </constraints>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="aBF-ax-fxy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Dd7-U6-YfB" firstAttribute="top" secondItem="aBF-ax-fxy" secondAttribute="top" constant="288" id="0X4-p0-LdJ"/>
                             <constraint firstItem="aBF-ax-fxy" firstAttribute="bottom" secondItem="vjh-21-vjr" secondAttribute="bottom" constant="18" id="2j7-Ky-jqi"/>
@@ -505,13 +508,28 @@
                             <constraint firstItem="Dd7-U6-YfB" firstAttribute="bottom" secondItem="vjh-21-vjr" secondAttribute="bottom" id="TmG-WX-LBR"/>
                             <constraint firstItem="Dd7-U6-YfB" firstAttribute="leading" secondItem="VLO-J1-6yD" secondAttribute="leadingMargin" constant="157" id="XI8-cV-qKx"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="aBF-ax-fxy"/>
                     </view>
                     <navigationItem key="navigationItem" title="Kodla" id="kyR-M1-aAK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FlC-XV-hTy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1031.9196428571429" y="4237.68115942029"/>
+        </scene>
+        <!--Code Block Examples View Controller-->
+        <scene sceneID="lQD-wS-bd3">
+            <objects>
+                <viewController id="z14-Zy-pSL" customClass="CodeBlockExamplesViewController" customModule="Kart_ON" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0SO-gv-Ak4">
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="370"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aQb-fT-w2z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6ol-JT-m9M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hiS-qq-0aZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1759" y="4239"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IYp-jo-7Xd">
@@ -532,15 +550,45 @@
             <point key="canvasLocation" x="-181" y="2348"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="3DV-fP-4Qg">
+            <size key="intrinsicContentSize" width="17.5" height="27"/>
+        </designable>
+        <designable name="4K0-m9-JM9">
+            <size key="intrinsicContentSize" width="18.5" height="27"/>
+        </designable>
+        <designable name="BwO-q1-wgg">
+            <size key="intrinsicContentSize" width="24.5" height="27"/>
+        </designable>
+        <designable name="OX1-Lx-jHK">
+            <size key="intrinsicContentSize" width="21" height="27"/>
+        </designable>
+        <designable name="Rh4-2Q-T0i">
+            <size key="intrinsicContentSize" width="18" height="27"/>
+        </designable>
+        <designable name="vjh-21-vjr">
+            <size key="intrinsicContentSize" width="18" height="27"/>
+        </designable>
+    </designables>
     <resources>
         <image name="0" width="575" height="436"/>
-        <image name="camera" catalog="system" width="128" height="96"/>
+        <image name="camera" catalog="system" width="128" height="94"/>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="pencil.circle" catalog="system" width="128" height="121"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <image name="rectangle.3.offgrid" catalog="system" width="128" height="80"/>
+        <image name="rectangle.3.offgrid" catalog="system" width="128" height="81"/>
         <image name="tortoise" catalog="system" width="128" height="68"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

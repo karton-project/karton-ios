@@ -28,6 +28,10 @@
 		D48EE320249ADB2400F1C598 /* karton_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EE31F249ADB2400F1C598 /* karton_iosTests.swift */; };
 		D48EE32B249ADB2400F1C598 /* karton_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EE32A249ADB2400F1C598 /* karton_iosUITests.swift */; };
 		D49A49EB2501527D00B43D8B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49A49EA2501527D00B43D8B /* MainViewController.swift */; };
+		D4B073EE2544C5B400A747A0 /* CodeBlockExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B073ED2544C5B400A747A0 /* CodeBlockExamplesViewController.swift */; };
+		D4B073F32544C88700A747A0 /* CodeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B073F22544C88700A747A0 /* CodeExample.swift */; };
+		D4B073F82544CD8500A747A0 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B073F72544CD8500A747A0 /* Program.swift */; };
+		D4B073FD2544CF1300A747A0 /* CodeLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B073FC2544CF1300A747A0 /* CodeLine.swift */; };
 		D4F625F124B9A46900EDB10B /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F625F024B9A46900EDB10B /* HomePageViewController.swift */; };
 		D4F625F624B9AC1600EDB10B /* HomePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F625F524B9AC1600EDB10B /* HomePageCollectionViewCell.swift */; };
 		D4F625FF24BA331E00EDB10B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F625FE24BA331E00EDB10B /* RoundButton.swift */; };
@@ -82,6 +86,10 @@
 		D48EE32A249ADB2400F1C598 /* karton_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = karton_iosUITests.swift; sourceTree = "<group>"; };
 		D48EE32C249ADB2400F1C598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D49A49EA2501527D00B43D8B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D4B073ED2544C5B400A747A0 /* CodeBlockExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlockExamplesViewController.swift; sourceTree = "<group>"; };
+		D4B073F22544C88700A747A0 /* CodeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeExample.swift; sourceTree = "<group>"; };
+		D4B073F72544CD8500A747A0 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		D4B073FC2544CF1300A747A0 /* CodeLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeLine.swift; sourceTree = "<group>"; };
 		D4F625F024B9A46900EDB10B /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		D4F625F524B9AC1600EDB10B /* HomePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewCell.swift; sourceTree = "<group>"; };
 		D4F625FE24BA331E00EDB10B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -204,6 +212,7 @@
 				D47EC55324F840E5003AC8D9 /* CameraViewController.swift */,
 				D42559E224FAB41500C0CB8F /* CodingViewController.swift */,
 				D49A49EA2501527D00B43D8B /* MainViewController.swift */,
+				D4B073ED2544C5B400A747A0 /* CodeBlockExamplesViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -222,6 +231,9 @@
 				D43EACC724D71355007797CF /* JSONs.swift */,
 				D43EACC324D712C4007797CF /* Content.swift */,
 				D43EACC524D712F6007797CF /* ContentsDataSource.swift */,
+				D4B073F22544C88700A747A0 /* CodeExample.swift */,
+				D4B073F72544CD8500A747A0 /* Program.swift */,
+				D4B073FC2544CF1300A747A0 /* CodeLine.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -525,8 +537,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4B073FD2544CF1300A747A0 /* CodeLine.swift in Sources */,
+				D4B073F82544CD8500A747A0 /* Program.swift in Sources */,
+				D4B073EE2544C5B400A747A0 /* CodeBlockExamplesViewController.swift in Sources */,
 				D4F625F624B9AC1600EDB10B /* HomePageCollectionViewCell.swift in Sources */,
 				D49A49EB2501527D00B43D8B /* MainViewController.swift in Sources */,
+				D4B073F32544C88700A747A0 /* CodeExample.swift in Sources */,
 				D43EACC624D712F6007797CF /* ContentsDataSource.swift in Sources */,
 				D43EACC824D71355007797CF /* JSONs.swift in Sources */,
 				D4F625FF24BA331E00EDB10B /* RoundButton.swift in Sources */,

@@ -1,14 +1,17 @@
 //
-//  CodingViewController.swift
+//  CodeBlockExamplesViewController.swift
 //  karton-ios
 //
-//  Created by Ece Azizoğlu on 29.08.2020.
+//  Created by Ece Azizoğlu on 24.10.2020.
 //  Copyright © 2020 Ece Azizoğlu. All rights reserved.
 //
 
 import UIKit
 
-class CodingViewController: UIViewController {
+class CodeBlockExamplesViewController: UIViewController {
+    
+    let url = ""
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,15 +19,7 @@ class CodingViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
+   
     
 
     /*
