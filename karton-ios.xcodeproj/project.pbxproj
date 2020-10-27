@@ -28,10 +28,14 @@
 		D48EE320249ADB2400F1C598 /* karton_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EE31F249ADB2400F1C598 /* karton_iosTests.swift */; };
 		D48EE32B249ADB2400F1C598 /* karton_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EE32A249ADB2400F1C598 /* karton_iosUITests.swift */; };
 		D49A49EB2501527D00B43D8B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49A49EA2501527D00B43D8B /* MainViewController.swift */; };
+		D4A1BB6B25481DA50081D401 /* CodeExamplesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A1BB6A25481DA50081D401 /* CodeExamplesDataSource.swift */; };
+		D4A5169625481894004FD2D1 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A5169425481894004FD2D1 /* CollectionTableViewCell.swift */; };
+		D4A5169F2548193D004FD2D1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A5169E2548193D004FD2D1 /* CollectionViewCell.swift */; };
 		D4B073EE2544C5B400A747A0 /* CodeBlockExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B073ED2544C5B400A747A0 /* CodeBlockExamplesViewController.swift */; };
 		D4B073F32544C88700A747A0 /* CodeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B073F22544C88700A747A0 /* CodeExample.swift */; };
 		D4B073F82544CD8500A747A0 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B073F72544CD8500A747A0 /* Program.swift */; };
 		D4B073FD2544CF1300A747A0 /* CodeLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B073FC2544CF1300A747A0 /* CodeLine.swift */; };
+		D4B074032544D48E00A747A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B074022544D48E00A747A0 /* Constants.swift */; };
 		D4F625F124B9A46900EDB10B /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F625F024B9A46900EDB10B /* HomePageViewController.swift */; };
 		D4F625F624B9AC1600EDB10B /* HomePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F625F524B9AC1600EDB10B /* HomePageCollectionViewCell.swift */; };
 		D4F625FF24BA331E00EDB10B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F625FE24BA331E00EDB10B /* RoundButton.swift */; };
@@ -86,10 +90,14 @@
 		D48EE32A249ADB2400F1C598 /* karton_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = karton_iosUITests.swift; sourceTree = "<group>"; };
 		D48EE32C249ADB2400F1C598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D49A49EA2501527D00B43D8B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D4A1BB6A25481DA50081D401 /* CodeExamplesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeExamplesDataSource.swift; sourceTree = "<group>"; };
+		D4A5169425481894004FD2D1 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		D4A5169E2548193D004FD2D1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		D4B073ED2544C5B400A747A0 /* CodeBlockExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlockExamplesViewController.swift; sourceTree = "<group>"; };
 		D4B073F22544C88700A747A0 /* CodeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeExample.swift; sourceTree = "<group>"; };
 		D4B073F72544CD8500A747A0 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
 		D4B073FC2544CF1300A747A0 /* CodeLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeLine.swift; sourceTree = "<group>"; };
+		D4B074022544D48E00A747A0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D4F625F024B9A46900EDB10B /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		D4F625F524B9AC1600EDB10B /* HomePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewCell.swift; sourceTree = "<group>"; };
 		D4F625FE24BA331E00EDB10B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -140,6 +148,7 @@
 			children = (
 				D44DFD1124F2D929008B210F /* 1st.jpg */,
 				D44DFD1324F2D931008B210F /* 2nd.jpg */,
+				D4B074022544D48E00A747A0 /* Constants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -203,6 +212,22 @@
 			path = "karton-iosUITests";
 			sourceTree = "<group>";
 		};
+		D4A516922548184A004FD2D1 /* Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D4A5169425481894004FD2D1 /* CollectionTableViewCell.swift */,
+			);
+			path = "Table Cell";
+			sourceTree = "<group>";
+		};
+		D4A5169325481857004FD2D1 /* Collection Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D4A5169E2548193D004FD2D1 /* CollectionViewCell.swift */,
+			);
+			path = "Collection Cell";
+			sourceTree = "<group>";
+		};
 		D4F625EF24B9A43D00EDB10B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +245,8 @@
 		D4F625F224B9AB8400EDB10B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				D4A5169325481857004FD2D1 /* Collection Cell */,
+				D4A516922548184A004FD2D1 /* Table Cell */,
 				D4F625F524B9AC1600EDB10B /* HomePageCollectionViewCell.swift */,
 			);
 			path = Cells;
@@ -234,6 +261,7 @@
 				D4B073F22544C88700A747A0 /* CodeExample.swift */,
 				D4B073F72544CD8500A747A0 /* Program.swift */,
 				D4B073FC2544CF1300A747A0 /* CodeLine.swift */,
+				D4A1BB6A25481DA50081D401 /* CodeExamplesDataSource.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -544,9 +572,11 @@
 				D49A49EB2501527D00B43D8B /* MainViewController.swift in Sources */,
 				D4B073F32544C88700A747A0 /* CodeExample.swift in Sources */,
 				D43EACC624D712F6007797CF /* ContentsDataSource.swift in Sources */,
+				D4A1BB6B25481DA50081D401 /* CodeExamplesDataSource.swift in Sources */,
 				D43EACC824D71355007797CF /* JSONs.swift in Sources */,
 				D4F625FF24BA331E00EDB10B /* RoundButton.swift in Sources */,
 				D47EC55424F840E5003AC8D9 /* CameraViewController.swift in Sources */,
+				D4A5169F2548193D004FD2D1 /* CollectionViewCell.swift in Sources */,
 				D43EACC424D712C4007797CF /* Content.swift in Sources */,
 				D4F625F124B9A46900EDB10B /* HomePageViewController.swift in Sources */,
 				D42559E324FAB41500C0CB8F /* CodingViewController.swift in Sources */,
@@ -554,6 +584,8 @@
 				D44DFD1624F2DB4A008B210F /* UIUtilities.swift in Sources */,
 				D48EE30B249ADB2200F1C598 /* SceneDelegate.swift in Sources */,
 				D42C8A5C24D7324600170880 /* WebKitViewController.swift in Sources */,
+				D4A5169625481894004FD2D1 /* CollectionTableViewCell.swift in Sources */,
+				D4B074032544D48E00A747A0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

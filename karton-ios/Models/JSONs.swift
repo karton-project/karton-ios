@@ -95,3 +95,343 @@ let tr_content_json = """
     "practiceType": "demo"
 }]
 """
+
+let tr_example_json = """
+[{
+      "name": "Merhaba Dünya!",
+      "programList": [
+        {
+          "name": "Kırmızı Daire",
+          "code": [
+            {
+              "command": "doldur",
+              "input": "r: 255 g: 0 b: 0",
+              "type": "RGB"
+            },
+            {
+              "command": "elips",
+              "input": "x:200 y:200 w:250 h:250",
+              "type": "XYWH"
+            }
+
+          ]
+        },
+        {
+          "name": "Mavi Dikdörtgen",
+          "code": [
+            {
+              "command": "doldur",
+              "input": "r: 0 g: 0 b: 255",
+              "type": "RGB"
+            },
+            {
+              "command": "dörtgen",
+              "input": "x:200 y:200 w:100 h:150",
+              "type": "XYWH"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Renkler ve Şekiller",
+      "programList": [
+        {
+          "name": "Turuncu Daire ve Kare",
+          "code": [
+            {
+              "command": "doldur",
+              "input": "r: 255 g: 130 b: 0"
+            },
+            {
+              "command": "elips",
+              "input": "x:200 y:200 w:100 h:100"
+            },
+            {
+              "command": "dörtgen",
+              "input": "x:150 y:150 w:50 h:50"
+            }
+          ]
+        },
+        {
+          "name": "Turuncu Daire ve Pembe Kare",
+          "code": [
+            {
+              "command": "doldur",
+              "input": "r: 255 g: 130 b: 0"
+            },
+            {
+              "command": "elips",
+              "input": "x:200 y:200 w:100 h:100"
+            },
+            {
+              "command": "doldur",
+              "input": "r: 255 g: 0 b: 190"
+            },
+            {
+              "command": "dörtgen",
+              "input": "x:150 y:150 w:50 h:50"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Çizim Yapma",
+      "programList": [
+        {
+          "name": "Araba",
+          "code": [
+            {
+              "command": "doldur",
+              "input": "r: 232 g: 103 b: 103"
+            },
+            {
+              "command": "kenar",
+              "input": "r: 165 g: 165 b: 165"
+            },
+            {
+              "command": "dörtgen",
+              "input": "x:100 y:50 w:150 h:100"
+            },
+            {
+              "command": "elips",
+              "input": "x:125 y:175 w:50 h:50"
+            },
+            {
+              "command": "elips",
+              "input": "x:225 y:175 w:50 h:50"
+            }
+          ]
+        },
+        {
+          "name": "Kedi",
+          "code": [
+            {
+              "command": "dörtgen",
+              "input": "x: 100 y: 150 w: 100 h: 200"
+            },
+            {
+              "command": "doldur",
+              "input": "r: 200 g:100 b:100"
+            },
+            {
+              "command": "elips",
+              "input": "x: 100 y: 350 w:50 h:50"
+            },
+            {
+              "command": "elips",
+              "input": "x: 200 y: 350 w: 50 h: 50"
+            },
+            {
+              "command": "üçgen",
+              "input": "x: 60 y: 60 w: 50 h: 40"
+            },
+            {
+              "command": "üçgen",
+              "input": "x: 190 y: 60 w: 50 h: 40"
+            },
+            {
+              "command": "doldur",
+              "input": "r: 100 g: 90 b:120"
+            },
+            {
+              "command": "elips",
+              "input": "x: 150 y: 150 w: 200 h: 200"
+            },
+            {
+              "command": "doldur",
+              "input": "r: 255 g: 255 b: 255"
+            },
+            {
+              "command": "elips",
+              "input": "x: 120 y: 100 w: 50 h:50"
+            },
+            {
+              "command": "elips",
+              "input": "x: 180 y: 100 w: 50 h: 50"
+            },
+            {
+              "command": "doldur",
+              "input": "r: 0 g: 0 b: 0"
+            },
+            {
+              "command": "elips",
+              "input": "x: 120 y: 100 w: 20 h: 20"
+            },
+            {
+              "command": "elips",
+              "input": "x: 180 y: 100 w: 20 h: 20"
+            },
+            {
+              "command": "kenar",
+              "input": "r: 255 g: 255 b: 255"
+            },
+            {
+              "command": "çizgi",
+              "input": "sx: 150 sy: 170 ex: 120 ey: 180"
+            },
+            {
+              "command": "çizgi",
+              "input": "sx: 150 sy: 170 ex: 130 ey: 190"
+            },
+            {
+              "command": "çizgi",
+              "input": "sx: 150 sy: 170 ex: 180 ey: 180"
+            },
+            {
+              "command": "çizgi",
+              "input": "sx: 150 sy: 170 ex: 170 ey: 190"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Değişkenler ve Animasyon",
+      "programList": [
+        {
+          "name": "Dokunmatik Çizgiler",
+          "code": [
+            {
+              "command": "doldur",
+              "input": "r: 0 g: 0 b: 0"
+            },
+            {
+              "command": "çizgi",
+              "input": "sx: dokunX sy: 0 ex: dokunX ey: height"
+            }
+          ]
+        },
+        {
+          "name": "Dokunmatik Renkler",
+          "code": [
+            {
+              "command": "eğer:",
+              "input": "dokunX > 250"
+            },
+            {
+              "command": "doldur",
+              "input": "r: 0 g: 0 b: 255"
+            },
+            {
+              "command": "değilse",
+              "input": ""
+            },
+            {
+              "command": "doldur",
+              "input": "r: 255 g: 0 b: 0"
+            },
+            {
+              "command": "bitir",
+              "input": ""
+            },
+            {
+              "command": "elips",
+              "input": "x: 100 y: 100 w: 100 h: 100"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fonksiyon ve Döngüler",
+      "programList": [
+        {
+          "name": "On İki Araba",
+          "code": [
+            {
+              "command": "fonksiyon tanımla:",
+              "input": "araba"
+            },
+            {
+              "command": "doldur",
+              "input": "r: 232 g: 103 b: 103"
+            },
+            {
+              "command": "kenar",
+              "input": "r: 165 g: 165 b: 165"
+            },
+            {
+              "command": "dörtgen",
+              "input": "x:100 y:50 w:150 h:100"
+            },
+            {
+              "command": "elips",
+              "input": "x:125 y:175 w:50 h:50"
+            },
+            {
+              "command": "elips",
+              "input": "x:225 y:175 w:50 h:50"
+            },
+            {
+              "command": "bitir",
+              "input": ""
+            },
+            {
+              "command": "tekrarla:",
+              "input": "12"
+            },
+            {
+              "command": "çağır",
+              "input": "araba"
+            },
+            {
+              "command": "ötele",
+              "input": "x: 50 y: 20"
+            },
+            {
+              "command": "bitir",
+              "input": ""
+            }
+          ]
+        },
+        {
+          "name": "İç İçe Döngü",
+          "code": [
+            {
+              "command": "değişken tanımla",
+              "input": "n: konumx v: 40"
+            },
+            {
+              "command": "değişken tanımla",
+              "input": "n: konumy v: 40"
+            },
+            {
+              "command": "tekrarla:",
+              "input": "5"
+            },
+            {
+              "command": "tekrarla:",
+              "input": "5"
+            },
+            {
+              "command": "elips",
+              "input": "x: konumx y: konumy w: 30 h: 30"
+            },
+            {
+              "command": "bitir",
+              "input": ""
+            },
+            {
+              "command": "değer ata",
+              "input": "n: konumx v: 40"
+            },
+            {
+              "command": "değerini artır",
+              "input": "n: konumy v: 50"
+            },
+            {
+              "command": "değerini artır",
+              "input": "n: konumx v: 50"
+            },
+            {
+              "command": "bitir",
+              "input": ""
+            }
+          ]
+        }
+      ]
+    }]
+"""
+

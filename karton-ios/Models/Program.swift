@@ -8,10 +8,8 @@
 
 import Foundation
 
-struct Program: Decodable {
+struct Program: Codable {
     
     let name: String
-    var code: Array<CodeLine> = Array()
-    let bitmap: String
-    
+    let code: [CodeLine]
 }

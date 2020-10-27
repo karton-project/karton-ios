@@ -8,8 +8,23 @@
 
 import UIKit
 
+extension CodeBlockExamplesViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CollectionTableViewCell", for: indexPath)
+        return cell
+    }
+    
+    
+}
+
 class CodeBlockExamplesViewController: UIViewController {
     
+    
+    @IBOutlet weak var tableView: UITableView!
     let url = ""
     
 

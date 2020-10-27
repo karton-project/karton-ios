@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct CodeExample: Decodable {
+struct CodeExample: Codable {
     
     let name: String
-    var programList: Array<Program> = Array()
+    let programList: [Program]
     
 }
