@@ -8,21 +8,12 @@
 
 import Foundation
 
-struct CodeLine: Decodable {
+struct CodeLine: Codable {
     
     let command: String
-    let input: [String]
-    let type: Type
+    let input: String
+    let type: String?
     
 }
 
-enum Type {
-    case X
-    case XY
-    case XYWH
-    case RGB
-    case NV
-    case N
-    case END
-    case NONE
-}
+

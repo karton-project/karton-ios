@@ -16,7 +16,7 @@ extension CollectionTableViewCell: UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
         
-        let content = codeExampleDataSource.exampleArray[indexPath.row].programList[indexPath.row]
+        let content = codeExampleDataSource.exampleArray[indexPath.row].programList[0]
         
         cell.title.text = content.name
         cell.code.text = content.code[0].command
