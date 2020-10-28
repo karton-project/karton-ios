@@ -18,4 +18,5 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var duzenleButton: UIButton!
     @IBOutlet weak var kodaEkleButton: UIButton!
     @IBOutlet weak var silButton: UIButton!
+    
 }

@@ -14,9 +14,16 @@ extension CodeBlockExamplesViewController: UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CollectionTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CollectionTableViewCell", for: indexPath) as! CollectionTableViewCell
+        let content = codeExampleDataSource.exampleArray[indexPath.row]
+        
+        cell.groupTitle.text = content.name
+        cell.innerContent = content.programList
+        
+    
         return cell
     }
+    
     
     
 }
@@ -26,11 +33,15 @@ class CodeBlockExamplesViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     let url = ""
-    
+    let codeExampleDataSource = CodeExamplesDataSource()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
 
+        self.tableView.rowHeight = 300
         // Do any additional setup after loading the view.
     }
     

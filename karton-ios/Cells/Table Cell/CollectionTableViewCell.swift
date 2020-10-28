@@ -10,17 +10,16 @@ import UIKit
 
 extension CollectionTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return codeExampleDataSource.exampleArray.count
+        return innerContent.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
         
-        let content = codeExampleDataSource.exampleArray[indexPath.row].programList[0]
+        cell.title.text = innerContent[indexPath.row].name
+        cell.code.text = innerContent[indexPath.row].code.description
         
-        cell.title.text = content.name
-        cell.code.text = content.code[0].command
-        
+
         return cell
     }
     
@@ -35,7 +34,9 @@ class CollectionTableViewCell: UITableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var groupTitle: UILabel!
     let codeExampleDataSource = CodeExamplesDataSource()
+    public var innerContent: [Program]! 
 
     override func awakeFromNib() {
         super.awakeFromNib()
