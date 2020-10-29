@@ -17,14 +17,30 @@ extension CollectionTableViewCell: UICollectionViewDelegate, UICollectionViewDat
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
         
         cell.title.text = innerContent[indexPath.row].name
-        cell.code.text = innerContent[indexPath.row].code.description
+        
+        let code = innerContent[indexPath.row].code
+        cell.code.text = ""
+        for line in code {
+            cell.code.text! += line.command
+            cell.code.text! += " "
+            cell.code.text! += line.input
+        }
+        
+        cell.layer.cornerRadius = bounds.height/40
+        cell.title.font = UIFont.boldSystemFont(ofSize: cell.title.font.pointSize)
+        
+        cell.calistirButton.layer.cornerRadius = bounds.height/40
+        cell.kodaEkleButton.layer.cornerRadius = bounds.height/40
+        cell.duzenleButton.layer.cornerRadius = bounds.height/40
+        cell.silButton.layer.cornerRadius = bounds.height/40
+            
         
 
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 50, height: 200)
+        return CGSize(width: 300, height: 300)
     }
     
     

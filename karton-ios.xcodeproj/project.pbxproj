@@ -223,6 +223,7 @@
 		D4A5169325481857004FD2D1 /* Collection Cell */ = {
 			isa = PBXGroup;
 			children = (
+				D4F625F524B9AC1600EDB10B /* HomePageCollectionViewCell.swift */,
 				D4A5169E2548193D004FD2D1 /* CollectionViewCell.swift */,
 			);
 			path = "Collection Cell";
@@ -247,7 +248,6 @@
 			children = (
 				D4A5169325481857004FD2D1 /* Collection Cell */,
 				D4A516922548184A004FD2D1 /* Table Cell */,
-				D4F625F524B9AC1600EDB10B /* HomePageCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";

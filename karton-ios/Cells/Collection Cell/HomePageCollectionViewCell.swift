@@ -18,5 +18,4 @@ class HomePageCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var dene: UIButton!
     
     
-    
 }
